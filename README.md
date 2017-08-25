@@ -12,7 +12,7 @@ Here is an example how the data looks like (*each class takes three-columns*):
 
 The original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains a lot of handwritten digits. People from AI/ML/Data Science community love this dataset and use it as a benchmark to validate their algorithms. In fact, MNIST is often the first dataset they would try on. *"If it doesn't work on MNIST, it **won't work** at all"*, they said. *"Well, if it does work on MNIST, it may still fail on others."* 
 
-`Fashion-MNIST` is intended to serve as a direct drop-in replacement for the original MNIST dataset for benchmarking machine learning algorithms as it shares the same image size and the structure of training and testing splits.
+`Fashion-MNIST` is intended to serve as a direct drop-in replacement for the original MNIST dataset to benchmark machine learning algorithms, as it shares the same image size and the structure of training and testing splits.
 
 ### To Serious Machine Learning Researchers
 
@@ -24,13 +24,36 @@ Seriously, we are talking about replacing MNIST. Here are some good reasons:
 
 ## Get the Data
 
-You can use [direct links to download the the dataset](#data-format).
+You can use direct links to download the the dataset. The data is stored in the **same** format as the original [MNIST data](http://yann.lecun.com/exdb/mnist/).
+
+| Name  | Content | Examples | Size | Link
+| --- | --- |--- | --- |--- |
+| `train-images-idx3-ubyte.gz`  | training set images  | 60,000|25 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz)|
+| `train-labels-idx1-ubyte.gz`  | training set labels  |60,000|140 Bytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz)|
+| `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000|4.2 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz)|
+| `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 92 Bytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|
 
 Or you can clone this repository, the dataset is under `data/fashion`. This repo contains some scripts for benchmark and visualization.
    
 ```bash
 git clone git@github.com:zalandoresearch/fashion-mnist.git
 ```
+
+### Labels
+Each training and test example is assigned to one of the following labels:
+
+| Label | Description |
+| --- | --- |
+| 0 | T-shirt/top |
+| 1 | Trouser |
+| 2 | Pullover |
+| 3 | Dress |
+| 4 | Coat |
+| 5 | Sandals |
+| 6 | Shirt |
+| 7 | Sneaker |
+| 8 | Bag |
+| 9 | Ankle boots |
 
 ## Usage
 
@@ -67,36 +90,8 @@ As one of the most popular dataset in the Machine Learning community, people hav
 - [Matlab](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset) and [this](https://de.mathworks.com/matlabcentral/fileexchange/27675-read-digits-and-labels-from-mnist-database?focused=5154133&tab=function)
 - [Ruby](https://github.com/gbuesing/mnist-ruby-test/blob/master/train/mnist_loader.rb)
 
-## Data Format
 
-The data is stored in the **same** format as the original [MNIST data](http://yann.lecun.com/exdb/mnist/).
 
-Four data files are available in this repo (in `data/fashion`):
-
-| Name  | Content | Examples | Size | Link
-| --- | --- |--- | --- |--- |
-| `train-images-idx3-ubyte.gz`  | training set images  | 60,000|25 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz)|
-| `train-labels-idx1-ubyte.gz`  | training set labels  |60,000|140 Bytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz)|
-| `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000|4.2 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz)|
-| `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 92 Bytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|
-
-The original thumbnail image from Zalando were size normalized to fit in a 60x60 pixel box while preserving their aspect ratio. Then apply simultaneous black/white threshold to the image. The resulting images contain grey levels as a result of the anti-aliasing technique used by the normalization algorithm. the images were centered in a 28x28 image by computing the center of mass of the pixels, and translating the image so as to position this point at the center of the 28x28 field.
-
-### Labels
-Each training and test example is assigned to one of the following labels:
-
-| Label | Description |
-| --- | --- |
-| 0 | T-shirt/top |
-| 1 | Trouser |
-| 2 | Pullover |
-| 3 | Dress |
-| 4 | Coat |
-| 5 | Sandals |
-| 6 | Shirt |
-| 7 | Sneaker |
-| 8 | Bag |
-| 9 | Ankle boots |
 
 ## Benchmark
 We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers with different 
