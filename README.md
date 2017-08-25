@@ -12,10 +12,7 @@ Here is an example how the data looks like (*each class takes three-columns*):
 
 The original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains a lot of handwritten digits. People from AI/ML/Data Science community love this dataset and use it as a benchmark to validate their algorithms. In fact, MNIST is often the first dataset they would try on. *"If it doesn't work on MNIST, it **won't work** at all"*, they said. *"Well, if it does work on MNIST, it may still fail on others."* 
 
-We, [Zalando Research](https://research.zalando.com), want to boost the interest of AI inside the company. We would be happy to see our colleagues trying machine learning and pattern recognition techniques on real-world data while spending minimal efforts on preprocessing and formatting. As the Europe's largest online fashion platform, having a data set about fashion articles is definitely more interesting than recognizing digits.
-
-`Fashion-MNIST` is intended to serve as a direct drop-in
-replacement for the original MNIST dataset for benchmarking machine learning algorithms as it shares the same image size and the structure of training and testing splits.
+`Fashion-MNIST` is intended to serve as a direct drop-in replacement for the original MNIST dataset for benchmarking machine learning algorithms as it shares the same image size and the structure of training and testing splits.
 
 ### To Serious Machine Learning Researchers
 
@@ -103,9 +100,7 @@ parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-cent
 
 <img src="doc/img/benchmark.gif" width="100%">
 
-Before submitting a benchmark, please make sure it is not 
-listed [in this list]((http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)).
-And then please create a new issue, your results will be listed here. Check out the [Contributing](https://github.com/zalandoresearch/fashion-mnist#contributing) section for details.
+Before submitting a benchmark, please make sure it is not listed [in this list]((http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)). And then please create a new issue, your results will be listed here. Check out the [Contributing](https://github.com/zalandoresearch/fashion-mnist#contributing) section for details.
 
 | Classifier  | Preprocessing | Test accuracy (mean & std.) | Submitter| Reference|
 | --- | --- | --- | --- | --- |
@@ -121,29 +116,9 @@ And then please create a new issue, your results will be listed here. Check out 
 <img src="doc/img/f04ba662.png" width="50%"><img src="doc/img/4433f0e1.png" width="50%">
 
 
-## Build Dataset From Scratch
-
-:bomb: It may take hours to rebuild the dataset from scratch. You will need to install the following dependencies:
-
-- `jq`: a json parser
-- `pv`: bash pipe viewer
-- `parallel`: bash things in parallel
-- `ImageMagick`: powerful CLI for image manipulation
-- `PIL`: a python image processing package
-
-Make sure you are using Python 3.x.
-
-```bash
-cd builder
-python build_skuinfo.py
-./download_img.sh
-python build_dataset.py
-```
-
 ## Contributing
 
-Thanks for your interest in contributing! There are many ways to contribute to this project. [Get started here!](/CONTRIBUTING.md)
-And please check these [open issues](https://github.com/zalandoresearch/fashion-mnist/issues) for specific tasks.
+Thanks for your interest in contributing! There are many ways to contribute to this project. [Get started here!](/CONTRIBUTING.md) And please check these [open issues](https://github.com/zalandoresearch/fashion-mnist/issues) for specific tasks.
 
 ## Contact
 For discussion on the dataset, please use [this Hipchat room.](https://hipchat.zalando.net/chat/room/8093)

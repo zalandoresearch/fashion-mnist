@@ -88,3 +88,5 @@ ENV/
 .ropeproject
 
 .idea
+/data/fashion/holdout-labels-idx1-ubyte.gz
+/data/fashion/holdout-images-idx3-ubyte.gz
