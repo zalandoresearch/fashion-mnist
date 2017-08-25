@@ -91,16 +91,6 @@ As one of the most popular dataset in the Machine Learning community, people hav
 - [Ruby](https://github.com/gbuesing/mnist-ruby-test/blob/master/train/mnist_loader.rb)
 
 
-## Citing Fashion-MNIST
-If you use Fashion-MNIST in a scientific publication, we would appreciate references to the following paper:
-
-> Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv: TBA
-
-Bibtex entry:
-```latex
-TBA
-```
-
 ## Benchmark
 We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers with different 
 parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
@@ -129,6 +119,16 @@ Thanks for your interest in contributing! There are many ways to contribute to t
 
 ## Contact
 For discussion on the dataset, please use [this Hipchat room.](https://hipchat.zalando.net/chat/room/8093)
+
+## Citing Fashion-MNIST
+If you use Fashion-MNIST in a scientific publication, we would appreciate references to the following paper:
+
+> Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv: TBA
+
+Bibtex entry:
+```latex
+TBA
+```
 
 ## License
 
