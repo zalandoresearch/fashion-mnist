@@ -16,7 +16,7 @@ The original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains a lot o
 
 ### To Serious Machine Learning Researchers
 
-Seriously, we are talking about replacing MNIST, starting from all research engineers/scientists at Zalando. Here are some good reasons:
+Seriously, we are talking about replacing MNIST. Here are some good reasons:
 
 - MNIST is too easy. Check out [our side-by-side benchmark](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) and ["Most pairs of MNIST digits can be distinguished pretty well by just one pixel"](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)
 - MNIST is overused. Check out ["Ian Goodfellow wants people to move away from mnist"](https://twitter.com/goodfellow_ian/status/852591106655043584)
@@ -29,6 +29,8 @@ Clone the repository, the dataset is under `data/fashion`
 ```bash
 git clone git@github.com:zalandoresearch/fashion-mnist.git
 ```
+
+Or use [direct links to download the the dataset](#data-format)
 
 ### Loading data with Python (`numpy` is required)
 - use `utils/mnist_reader` in this repo:
@@ -69,12 +71,12 @@ The data is stored in the **same** format as the original [MNIST data](http://ya
 
 Four data files are available in this repo (in `data/fashion`):
 
-| Name  | Content | Examples | Size
-| --- | --- |--- | --- |
-| `train-images-idx3-ubyte.gz`  | training set images  | 60,000|25 MBytes
-| `train-labels-idx1-ubyte.gz`  | training set labels  |60,000|140 Bytes
-| `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000|4.2 MBytes
-| `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 92 Bytes
+| Name  | Content | Examples | Size | Link
+| --- | --- |--- | --- |--- |
+| `train-images-idx3-ubyte.gz`  | training set images  | 60,000|25 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz)|
+| `train-labels-idx1-ubyte.gz`  | training set labels  |60,000|140 Bytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz)|
+| `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000|4.2 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz)|
+| `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 92 Bytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|
 
 The original thumbnail image from Zalando were size normalized to fit in a 60x60 pixel box while preserving their aspect ratio. Then apply simultaneous black/white threshold to the image. The resulting images contain grey levels as a result of the anti-aliasing technique used by the normalization algorithm. the images were centered in a 28x28 image by computing the center of mass of the pixels, and translating the image so as to position this point at the center of the 28x28 field.
 
