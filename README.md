@@ -1,0 +1,159 @@
+# Fashion-MNIST
+A dataset of Zalando's article images consisting of a training set of 60,000 examples and a test set of 10,000 
+examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. `Fashion-MNIST` is intended to serve as a direct **drop-in replacement** for the original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) to benchmark machine learning algorithms.
+
+Here is an example how the data looks like (*each class takes three-columns*):
+
+![](doc/img/b6e79fa2.png)
+
+<img src="doc/img/embedding.gif" width="100%">
+
+## Why?
+
+The original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains a lot of handwritten digits. People from AI/ML/Data Science community love this dataset and use it as a benchmark to validate their algorithms. In fact, MNIST is often the first dataset they would try on. *"If it doesn't work on MNIST, it **won't work** at all"*, they said. *"Well, if it does work on MNIST, it may still fail on others."* 
+
+We, [Zalando Research](https://research.zalando.com), want to boost the interest of AI inside the company. We would be happy to see our colleagues trying machine learning and pattern recognition techniques on real-world data while spending minimal efforts on preprocessing and formatting. As the Europe's largest online fashion platform, having a data set about fashion articles is definitely more interesting than recognizing digits.
+
+`Fashion-MNIST` is intended to serve as a direct drop-in
+replacement for the original MNIST dataset for benchmarking machine learning algorithms as it shares the same image size and the structure of training and testing splits.
+
+### To Serious Machine Learning Researchers
+
+Seriously, we are talking about replacing MNIST, starting from all research engineers/scientists at Zalando. Here are some good reasons:
+
+- MNIST is too easy. Check out [our side-by-side benchmark](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) and ["Most pairs of MNIST digits can be distinguished pretty well by just one pixel"](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)
+- MNIST is overused. Check out ["Ian Goodfellow wants people to move away from mnist"](https://twitter.com/goodfellow_ian/status/852591106655043584)
+- MNIST can not represent modern CV tasks. Check out ["Ideas on MNIST do not transfer to real CV"](https://twitter.com/fchollet/status/852592598128615424)
+
+## Usage
+
+Clone the repository, the dataset is under `data/fashion`
+
+```bash
+git clone git@github.com:zalandoresearch/fashion-mnist.git
+```
+
+### Loading data with Python (`numpy` is required)
+- use `utils/mnist_reader` in this repo:
+```python
+import mnist_reader
+X_train, y_train = mnist_reader.load_mnist('data/fashion', kind='train')
+X_test, y_test = mnist_reader.load_mnist('data/fashion', kind='t10k')
+```
+
+### Loading data with Tensorflow
+```python
+from tensorflow.examples.tutorials.mnist import input_data
+data = input_data.read_data_sets('data/fashion', one_hot=True)
+
+data.train.next_batch(100)
+```
+
+### Loading data with other languages
+
+As one of the most popular dataset in the Machine Learning community, people have implemented MNIST loader in many languages. They can be used to load `Fashion-MNIST` dataset as well (may require decompressing first). Note that they are not tested by us.
+
+- [C](https://stackoverflow.com/a/10409376)
+- [C++](https://github.com/wichtounet/mnist)
+- [Java](https://stackoverflow.com/a/8301949)
+- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist)
+- [Scala](http://mxnet.io/tutorials/scala/mnist.html)
+- [Go](https://github.com/schuyler/neural-go/blob/master/mnist/mnist.go)
+- [C#](https://jamesmccaffrey.wordpress.com/2013/11/23/reading-the-mnist-data-set-with-c/)
+- [NodeJS](https://github.com/ApelSYN/mnist_dl) and [this](https://github.com/cazala/mnist)
+- [Swift](https://github.com/simonlee2/MNISTKit)
+- [R](https://gist.github.com/brendano/39760)
+- [Matlab](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset) and [this](https://de.mathworks.com/matlabcentral/fileexchange/27675-read-digits-and-labels-from-mnist-database?focused=5154133&tab=function)
+- [Ruby](https://github.com/gbuesing/mnist-ruby-test/blob/master/train/mnist_loader.rb)
+
+## Data Format
+
+The data is stored in the **same** format as the original [MNIST data](http://yann.lecun.com/exdb/mnist/).
+
+Four data files are available in this repo (in `data/fashion`):
+
+| Name  | Content | Examples | Size
+| --- | --- |--- | --- |
+| `train-images-idx3-ubyte.gz`  | training set images  | 60,000|25 MBytes
+| `train-labels-idx1-ubyte.gz`  | training set labels  |60,000|140 Bytes
+| `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000|4.2 MBytes
+| `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 92 Bytes
+
+The original thumbnail image from Zalando were size normalized to fit in a 60x60 pixel box while preserving their aspect ratio. Then apply simultaneous black/white threshold to the image. The resulting images contain grey levels as a result of the anti-aliasing technique used by the normalization algorithm. the images were centered in a 28x28 image by computing the center of mass of the pixels, and translating the image so as to position this point at the center of the 28x28 field.
+
+### Labels
+Each training and test example is assigned to one of the following labels:
+
+| Label | Description |
+| --- | --- |
+| 0 | T-shirt/top |
+| 1 | Trouser |
+| 2 | Pullover |
+| 3 | Dress |
+| 4 | Coat |
+| 5 | Sandals |
+| 6 | Shirt |
+| 7 | Sneaker |
+| 8 | Bag |
+| 9 | Ankle boots |
+
+## Benchmark
+We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers with different 
+parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
+
+<img src="doc/img/benchmark.gif" width="100%">
+
+Before submitting a benchmark, please make sure it is not 
+listed [in this list]((http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)).
+And then please create a new issue, your results will be listed here. Check out the [Contributing](https://github.com/zalandoresearch/fashion-mnist#contributing) section for details.
+
+| Classifier  | Preprocessing | Test accuracy (mean & std.) | Submitter| Reference|
+| --- | --- | --- | --- | --- |
+| 2 Conv Layers with Max pooling and Dropout | None | 0.876 | Kashif Rasul | [zalando_mnist_cnn.py](https://gist.github.com/kashif/76792939dd6f473b7404474989cb62a8) |
+| 2 Conv Layers with Max pooling and Dropout | None | 0.916| Han Xiao | [convnet.py](/benchmark/convnet.py)|
+
+## Visualization
+
+### t-SNE on Fashion-MNIST (left) and original MNIST (right) 
+<img src="doc/img/34d72c08.png" width="50%"><img src="doc/img/01e0c4be.png" width="50%">
+
+### PCA on Fashion-MNIST (left) and original MNIST (right) 
+<img src="doc/img/f04ba662.png" width="50%"><img src="doc/img/4433f0e1.png" width="50%">
+
+
+## Build Dataset From Scratch
+
+:bomb: It may take hours to rebuild the dataset from scratch. You will need to install the following dependencies:
+
+- `jq`: a json parser
+- `pv`: bash pipe viewer
+- `parallel`: bash things in parallel
+- `ImageMagick`: powerful CLI for image manipulation
+- `PIL`: a python image processing package
+
+Make sure you are using Python 3.x.
+
+```bash
+cd builder
+python build_skuinfo.py
+./download_img.sh
+python build_dataset.py
+```
+
+## Contributing
+
+Thanks for your interest in contributing! There are many ways to contribute to this project. [Get started here!](/CONTRIBUTING.md)
+And please check these [open issues](https://github.com/zalandoresearch/fashion-mnist/issues) for specific tasks.
+
+## Contact
+For discussion on the dataset, please use [this Hipchat room.](https://hipchat.zalando.net/chat/room/8093)
+
+## License
+
+The MIT License (MIT) Copyright © [2017] Zalando SE, https://tech.zalando.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,28 @@
+
+.page-header {
+    margin: 10px 0 10px;
+}
+
+.center-block {
+    float: none !important
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80px;
+}
+
+.navbar-brand {
+    padding: 10px 10px;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.alert {
+    padding: 5px;
+    padding-left: 15px;
+}

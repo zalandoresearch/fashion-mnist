@@ -1,0 +1,253 @@
+{
+  "common": {
+  },
+  "classifiers": {
+    "PassiveAggressiveClassifier": [
+      {
+        "C": [
+          1.0,
+          10.0,
+          100.0
+        ]
+      }
+    ],
+    "SGDClassifier": [
+      {
+        "loss": [
+          "hinge",
+          "squared_hinge",
+          "perceptron",
+          "log",
+          "modified_huber"
+        ]
+      },
+      {
+        "penalty": [
+          "l1",
+          "l2",
+          "elasticnet"
+        ]
+      }
+    ],
+    "Perceptron": [
+      {
+        "penalty": [
+          "l1",
+          "l2",
+          "elasticnet"
+        ]
+      }
+    ],
+    "DecisionTreeClassifier": [
+      {
+        "criterion": [
+          "gini",
+          "entropy"
+        ]
+      },
+      {
+        "splitter": [
+          "best",
+          "random"
+        ]
+      },
+      {
+        "max_depth": [
+          10,
+          50,
+          100
+        ]
+      }
+    ],
+    "RandomForestClassifier": [
+      {
+        "criterion": [
+          "gini",
+          "entropy"
+        ]
+      },
+      {
+        "max_depth": [
+          10,
+          50,
+          100
+        ]
+      },
+      {
+        "n_estimators": [
+          10,
+          50,
+          100
+        ]
+      }
+    ],
+    "LogisticRegression": [
+      {
+        "penalty": [
+          "l1",
+          "l2"
+        ]
+      },
+      {
+        "C": [
+          1.0,
+          10.0,
+          100.0
+        ]
+      },
+      {
+        "multi_class": [
+          "ovr",
+          "multinomial"
+        ]
+      }
+    ],
+    "MLPClassifier": [
+      {
+        "activation": [
+          "tanh",
+          "relu"
+        ],
+        "hidden_layer_sizes": [
+          "(10,)",
+          "(100,)",
+          "(10,10,)",
+          "(100,10,)"
+        ]
+      }
+    ],
+    "KNeighborsClassifier": [
+      {
+        "n_neighbors": [
+          1,
+          5,
+          9
+        ]
+      },
+      {
+        "weights": [
+          "uniform",
+          "distance"
+        ]
+      },
+      {
+        "p": [
+          1,
+          2
+        ]
+      }
+    ],
+    "SVC": [
+      {
+        "C": [
+          1.0,
+          10.0,
+          100.0
+        ]
+      },
+      {
+        "kernel": [
+          "linear",
+          "rbf",
+          "poly",
+          "sigmoid"
+        ]
+      }
+    ],
+    "GaussianNB": [
+      {
+        "priors": [
+          [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ]
+        ]
+      }
+    ],
+    "ExtraTreeClassifier": [
+      {
+        "criterion": [
+          "gini",
+          "entropy"
+        ]
+      },
+      {
+        "splitter": [
+          "best",
+          "random"
+        ]
+      },
+      {
+        "max_depth": [
+          10,
+          50,
+          100
+        ]
+      }
+    ],
+    "GaussianProcessClassifier": [
+      {
+        "multi_class": [
+          "one_vs_one",
+          "one_vs_rest"
+        ]
+      }
+    ],
+    "GradientBoostingClassifier": [
+      {
+        "loss": [
+          "deviance"
+        ]
+      },
+      {
+        "n_estimators": [
+          10,
+          50,
+          100
+        ]
+      },
+      {
+        "max_depth": [
+          3,
+          10,
+          50
+        ]
+      }
+    ],
+    "LinearSVC": [
+      {
+        "loss": [
+          "hinge",
+          "squared_hinge"
+        ]
+      },
+      {
+        "penalty": [
+          "l1",
+          "l2"
+        ]
+      },
+      {
+        "C": [
+          1.0,
+          10.0,
+          100.0
+        ]
+      },
+      {
+        "multi_class": [
+          "ovr",
+          "crammer_singer"
+        ]
+      }
+    ]
+  }
+}
