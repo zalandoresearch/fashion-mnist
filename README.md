@@ -22,15 +22,17 @@ Seriously, we are talking about replacing MNIST. Here are some good reasons:
 - MNIST is overused. Check out ["Ian Goodfellow wants people to move away from mnist"](https://twitter.com/goodfellow_ian/status/852591106655043584)
 - MNIST can not represent modern CV tasks. Check out ["Ideas on MNIST do not transfer to real CV"](https://twitter.com/fchollet/status/852592598128615424)
 
-## Usage
+## Get the Data
 
-Clone the repository, the dataset is under `data/fashion`
+You can use [direct links to download the the dataset](#data-format).
 
+Or you can clone this repository, the dataset is under `data/fashion`. This repo contains some scripts for benchmark and visualization.
+   
 ```bash
 git clone git@github.com:zalandoresearch/fashion-mnist.git
 ```
 
-Or use [direct links to download the the dataset](#data-format)
+## Usage
 
 ### Loading data with Python (`numpy` is required)
 - use `utils/mnist_reader` in this repo:
