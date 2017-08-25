@@ -1,4 +1,7 @@
 # Fashion-MNIST
+
+[![Gitter chat](https://badges.gitter.im/fashion-mnist.png)]
+
 A dataset of Zalando's article images consisting of a training set of 60,000 examples and a test set of 10,000 
 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. `Fashion-MNIST` is intended to serve as a direct **drop-in replacement** for the original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) to benchmark machine learning algorithms.
 
