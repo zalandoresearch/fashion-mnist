@@ -5,9 +5,9 @@
 
 A dataset of Zalando's article images consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. `Fashion-MNIST` is intended to serve as a direct **drop-in replacement** of the original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) for benchmarking machine learning algorithms.
 
-Here is an example how the data looks like (*each class takes three-columns*):
+Here is an example how the data looks like (*each class takes three-rows*):
 
-![](doc/img/b6e79fa2.png)
+![](doc/img/fashion-mnist-sprite.png)
 
 <img src="doc/img/embedding.gif" width="100%">
 
