@@ -53,11 +53,11 @@ Each training and test example is assigned to one of the following labels:
 | 2 | Pullover |
 | 3 | Dress |
 | 4 | Coat |
-| 5 | Sandals |
+| 5 | Sandal |
 | 6 | Shirt |
 | 7 | Sneaker |
 | 8 | Bag |
-| 9 | Ankle boots |
+| 9 | Ankle boot |
 
 ## Usage
 
