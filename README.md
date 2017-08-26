@@ -3,8 +3,7 @@
 [![Gitter](https://badges.gitter.im/zalandoresearch/fashion-mnist.svg)](https://gitter.im/fashion-mnist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
 
-A dataset of Zalando's article images consisting of a training set of 60,000 examples and a test set of 10,000 
-examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. `Fashion-MNIST` is intended to serve as a direct **drop-in replacement** of the original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) for benchmarking machine learning algorithms.
+A dataset of Zalando's article images consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. `Fashion-MNIST` is intended to serve as a direct **drop-in replacement** of the original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) for benchmarking machine learning algorithms.
 
 Here is an example how the data looks like (*each class takes three-columns*):
 
@@ -32,10 +31,10 @@ You can use direct links to download the the dataset. The data is stored in the 
 
 | Name  | Content | Examples | Size | Link
 | --- | --- |--- | --- |--- |
-| `train-images-idx3-ubyte.gz`  | training set images  | 60,000|25 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz)|
-| `train-labels-idx1-ubyte.gz`  | training set labels  |60,000|140 Bytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz)|
+| `train-images-idx3-ubyte.gz`  | training set images  | 60,000|26 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz)|
+| `train-labels-idx1-ubyte.gz`  | training set labels  |60,000|29 KBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz)|
 | `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000|4.2 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz)|
-| `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 92 Bytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|
+| `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 5.0 KBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|
 
 Or you can clone this repository, the dataset is under `data/fashion`. This repo contains some scripts for benchmark and visualization.
    
@@ -72,7 +71,7 @@ X_test, y_test = mnist_reader.load_mnist('data/fashion', kind='t10k')
 ### Loading data with Tensorflow
 ```python
 from tensorflow.examples.tutorials.mnist import input_data
-data = input_data.read_data_sets('data/fashion', one_hot=True)
+data = input_data.read_data_sets('data/fashion')
 
 data.train.next_batch(100)
 ```
@@ -96,12 +95,13 @@ As one of the most popular dataset in the Machine Learning community, people hav
 
 
 ## Benchmark
-We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers with different 
-parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
+We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers with different parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
 
 <img src="doc/img/benchmark.gif" width="100%">
 
-Before submitting a benchmark, please make sure it is not listed [in this list]((http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)). And then please create a new issue, your results will be listed here. Check out the [Contributing](https://github.com/zalandoresearch/fashion-mnist#contributing) section for details.
+You can reproduce the results by running `benchmark/runner.py`. A recommend way is to  build and deploy this docker container. 
+
+You are welcome to submit your benchmark. Please create a new issue, your results will be listed here. Check out the [Contributing](https://github.com/zalandoresearch/fashion-mnist#contributing) section for details. Before submitting a benchmark, please make sure it is not listed [in this list](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/).  
 
 | Classifier  | Preprocessing | Test accuracy (mean & std.) | Submitter| Reference|
 | --- | --- | --- | --- | --- |
