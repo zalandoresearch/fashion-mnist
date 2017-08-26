@@ -128,12 +128,16 @@ For discussion on the dataset, please use [![Gitter](https://badges.gitter.im/za
 ## Citing Fashion-MNIST
 If you use Fashion-MNIST in a scientific publication, we would appreciate references to the following paper:
 
-> Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv: TBA
+> [Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms.](doc/arxiv.pdf) Han Xiao, Kashif Rasul, 
+Roland 
+Vollgraf. arXiv: TBA
 
 Bibtex entry:
 ```latex
 TBA
 ```
+
+The article is scheduled to be announced on arXiv at Mon, 28 Aug 2017 00:00:00 GMT.
 
 ## License
 
