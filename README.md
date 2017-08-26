@@ -103,10 +103,15 @@ You can reproduce the results by running `benchmark/runner.py`. A recommend way 
 
 You are welcome to submit your benchmark. Please create a new issue, your results will be listed here. Check out the [Contributing](https://github.com/zalandoresearch/fashion-mnist#contributing) section for details. Before submitting a benchmark, please make sure it is not listed [in this list](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/).  
 
-| Classifier  | Preprocessing | Test accuracy (mean & std.) | Submitter| Reference|
-| --- | --- | --- | --- | --- |
-| 2 Conv Layers with Max pooling and Dropout | None | 0.876 | Kashif Rasul | [zalando_mnist_cnn.py](https://gist.github.com/kashif/76792939dd6f473b7404474989cb62a8) |
-| 2 Conv Layers with Max pooling and Dropout | None | 0.916| Han Xiao | [convnet.py](/benchmark/convnet.py)|
+| Code | Classifier | Preprocessing | Test accuracy | Submitter| Reference|
+| --- | --- | --- | --- | --- | --- |
+| :white_check_mark: | 2 Conv Layers with Max pooling and Dropout | None | 0.876 | Kashif Rasul | [zalando_mnist_cnn.py](https://gist.github.com/kashif/76792939dd6f473b7404474989cb62a8) |
+| :white_check_mark: |Example: 2 Conv Layers with Max pooling and Dropout | None | 0.916| Han Xiao | [convnet.py](/benchmark/convnet.py)|
+| :white_check_mark:|Simple 2 layer convnet <100K parameter | None | 0.925 | [Martin Mundt](https://twitter.com/mundt_martin/status/901369943052210176) | https://github.com/hardmaru/pytorch_notebooks/blob/master/pytorch_tiny_custom_mnist_adam.ipynb| 
+| :white_check_mark:|GRU+SVM | None| 0.888 | @AFAgarap | https://github.com/zalandoresearch/fashion-mnist/issues/8|
+| :white_check_mark:|GRU+SVM with dropout | None| 0.855 | @AFAgarap | https://gist.githubusercontent.com/AFAgarap/92c1c4a5dd771999b0201ec0e7edfee0/raw/828fbda0e466dacb1fad66549e0e3022e1c7263a/gru_svm_zalando_dropout.py|
+| :white_large_square:|WRN40-4 8.9M params | standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips)| 0.967 | @ajbrock | https://github.com/zalandoresearch/fashion-mnist/issues/10|
+| :white_large_square:|DenseNet-BC 768K | standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.954 | @ajbrock | https://github.com/zalandoresearch/fashion-mnist/issues/10|
 
 ## Visualization
 
