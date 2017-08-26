@@ -1,0 +1,150 @@
+# Fashion-MNIST
+
+[![Gitter](https://badges.gitter.im/zalandoresearch/fashion-mnist.svg)](https://gitter.im/fashion-mnist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
+FashionMNIST是一个替代[MNIST手写数字集](http://yann.lecun.com/exdb/mnist/)的图像数据集。 它是由德国Zalando（一家时尚科技公司）旗下的[研究部门](https://research.zalando.com/)提供。其涵盖了来自10种类别的共7万个不同商品的正面图片。FashionMNIST的大小、格式和训练集/测试集划分与原始的MNIST完全一致。60000/10000的训练测试数据，28x28的灰度图片。你可以直接用它来测试你的机器学习和深度学习算法性能，且**不需要**改动任何的代码。
+
+这个数据集的样子大致如下（每个类别占三行）：
+
+![](doc/img/fashion-mnist-sprite.png)
+
+<img src="doc/img/embedding.gif" width="100%">
+
+## 为什么要做这个数据集？
+
+[经典的MNIST数据集](http://yann.lecun.com/exdb/mnist/)包含了大量的手写数字。十几年来，来自机器学习、机器视觉、人工智能、深度学习领域的研究员们把这个数据集作为衡量算法的基准之一。你会在很多的会议，期刊的论文中发现这个数据集的身影。实际上，MNIST数据集已经成为算法作者的必测的数据集之一。有人曾调侃道：*"如果一个算法在MNIST不work, 那么它就根本没法用；而如果它在MNIST上work, 它在其他数据上也可能不work！"*
+ 
+
+`Fashion-MNIST`的目的是要成为MNIST数据集的一个直接替代品。作为算法作者，你不需要修改任何的代码，就可以直接使用这个数据集。`Fashion-MNIST`的图片大小，训练、测试样本数及类别数与经典MNIST**完全相同**。
+
+### 写给专业的机器学习研究者
+
+我们是认真的。取代MNIST数据集的原因由如下几个：
+
+- MNIST太简单了，很多算法在测试集上的性能已经达到99.6%！不妨看看[我们基于scikit-learn上的评测](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) 和这段代码。 ["Most pairs of MNIST digits can be distinguished pretty well by just one pixel"（翻译：大多数MNIST只需要一个像素就可以区分开！）](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)
+- MNIST被用烂了。参考：["Ian Goodfellow wants people to move away from mnist"（翻译：Ian Goodfellow希望人们不要再用MNIST了。）](https://twitter.com/goodfellow_ian/status/852591106655043584)
+- MNIST数字识别的任务不代表现代机器学习。参考：["Ideas on MNIST do not transfer to real CV" （翻译：在MNIST上的想法没法迁移到真正的机器视觉问题上。）](https://twitter.com/fchollet/status/852592598128615424)
+
+## 获取数据
+
+你可以使用以下链接下载这个数据集。`Fashion-MNIST`的数据集的存储方式和命名与[经典MNIST数据集](http://yann.lecun.com/exdb/mnist/)完全一致。
+
+| 名称  | 描述 | 样本数量 | 文件大小 | 链接
+| --- | --- |--- | --- |--- |
+| `train-images-idx3-ubyte.gz`  | 训练集的图像  | 60,000|26 MBytes | [下载](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz)|
+| `train-labels-idx1-ubyte.gz`  | 训练集的类别标签  |60,000|29 KBytes | [下载](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz)|
+| `t10k-images-idx3-ubyte.gz`  | 测试集的图像  | 10,000|4.2 MBytes | [下载](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz)|
+| `t10k-labels-idx1-ubyte.gz`  | 测试集的类别标签  | 10,000| 5.0 KBytes | [下载](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|
+
+或者，你可以直接克隆这个代码库。数据集就放在`data/fashion`下。这个代码库还包含了一些用于评测和可视化的脚本。
+   
+```bash
+git clone git@github.com:zalandoresearch/fashion-mnist.git
+```
+
+### 类别标注
+Each training and test example is assigned to one of the following labels:
+
+| 标注编号 | 描述 |
+| --- | --- |
+| 0 | T-shirt/top（T恤）|
+| 1 | Trouser（裤子）|
+| 2 | Pullover（套衫）|
+| 3 | Dress（裙子）|
+| 4 | Coat（外套）|
+| 5 | Sandal（凉鞋）|
+| 6 | Shirt（汗衫）|
+| 7 | Sneaker（运动鞋）|
+| 8 | Bag（包）|
+| 9 | Ankle boot（踝靴）|
+
+## 如何载入数据？
+
+### 使用Python (需要安装`numpy`)
+- 你可以直接使用`utils/mnist_reader`：
+```python
+import mnist_reader
+X_train, y_train = mnist_reader.load_mnist('data/fashion', kind='train')
+X_test, y_test = mnist_reader.load_mnist('data/fashion', kind='t10k')
+```
+
+### 使用Tensorflow
+```python
+from tensorflow.examples.tutorials.mnist import input_data
+data = input_data.read_data_sets('data/fashion')
+
+data.train.next_batch(100)
+```
+
+### 使用其它的语言
+
+As one of the most popular dataset in the Machine Learning community, people have implemented MNIST loader in many languages. They can be used to load `Fashion-MNIST` dataset as well (may require decompressing first). Note that they are not tested by us.
+
+- [C](https://stackoverflow.com/a/10409376)
+- [C++](https://github.com/wichtounet/mnist)
+- [Java](https://stackoverflow.com/a/8301949)
+- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist)
+- [Scala](http://mxnet.io/tutorials/scala/mnist.html)
+- [Go](https://github.com/schuyler/neural-go/blob/master/mnist/mnist.go)
+- [C#](https://jamesmccaffrey.wordpress.com/2013/11/23/reading-the-mnist-data-set-with-c/)
+- [NodeJS](https://github.com/ApelSYN/mnist_dl) and [this](https://github.com/cazala/mnist)
+- [Swift](https://github.com/simonlee2/MNISTKit)
+- [R](https://gist.github.com/brendano/39760)
+- [Matlab](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset) and [this](https://de.mathworks.com/matlabcentral/fileexchange/27675-read-digits-and-labels-from-mnist-database?focused=5154133&tab=function)
+- [Ruby](https://github.com/gbuesing/mnist-ruby-test/blob/master/train/mnist_loader.rb)
+
+
+## Benchmark
+We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers with different parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
+
+<img src="doc/img/benchmark.gif" width="100%">
+
+You can reproduce the results by running `benchmark/runner.py`. A recommend way is to  build and deploy this docker container. 
+
+You are welcome to submit your benchmark. Please create a new issue, your results will be listed here. Check out the [Contributing](https://github.com/zalandoresearch/fashion-mnist#contributing) section for details. Before submitting a benchmark, please make sure it is not listed [in this list](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/).  
+
+| Classifier  | Preprocessing | Test accuracy (mean & std.) | Submitter| Reference|
+| --- | --- | --- | --- | --- |
+| 2 Conv Layers with Max pooling and Dropout | None | 0.876 | Kashif Rasul | [zalando_mnist_cnn.py](https://gist.github.com/kashif/76792939dd6f473b7404474989cb62a8) |
+| 2 Conv Layers with Max pooling and Dropout | None | 0.916| Han Xiao | [convnet.py](/benchmark/convnet.py)|
+
+## Visualization
+
+### t-SNE on Fashion-MNIST (left) and original MNIST (right) 
+<img src="doc/img/34d72c08.png" width="50%"><img src="doc/img/01e0c4be.png" width="50%">
+
+### PCA on Fashion-MNIST (left) and original MNIST (right) 
+<img src="doc/img/f04ba662.png" width="50%"><img src="doc/img/4433f0e1.png" width="50%">
+
+
+## Contributing
+
+Thanks for your interest in contributing! There are many ways to contribute to this project. [Get started here!](/CONTRIBUTING.md) And please check these [open issues](https://github.com/zalandoresearch/fashion-mnist/issues) for specific tasks.
+
+## Contact
+For discussion on the dataset, please use [![Gitter](https://badges.gitter.im/zalandoresearch/fashion-mnist.svg)](https://gitter.im/fashion-mnist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
+
+## Citing Fashion-MNIST
+If you use Fashion-MNIST in a scientific publication, we would appreciate references to the following paper:
+
+> [Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms.](doc/arxiv.pdf) Han Xiao, Kashif Rasul, 
+Roland 
+Vollgraf. arXiv: TBA
+
+Bibtex entry:
+```latex
+TBA
+```
+
+The article is scheduled to be announced on arXiv at Mon, 28 Aug 2017 00:00:00 GMT.
+
+## License
+
+The MIT License (MIT) Copyright © [2017] Zalando SE, https://tech.zalando.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
