@@ -22,9 +22,9 @@ The original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains a lot o
 
 Seriously, we are talking about replacing MNIST. Here are some good reasons:
 
-- MNIST is too easy. Check out [our side-by-side benchmark](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) and ["Most pairs of MNIST digits can be distinguished pretty well by just one pixel"](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)
-- MNIST is overused. Check out ["Ian Goodfellow wants people to move away from mnist"](https://twitter.com/goodfellow_ian/status/852591106655043584)
-- MNIST can not represent modern CV tasks. Check out ["Ideas on MNIST do not transfer to real CV"](https://twitter.com/fchollet/status/852592598128615424)
+- MNIST is too easy. Check out [our side-by-side benchmark.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) and ["Most pairs of MNIST digits can be distinguished pretty well by just one pixel"](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)
+- MNIST is overused. Check out ["Ian Goodfellow wants people to move away from mnist."](https://twitter.com/goodfellow_ian/status/852591106655043584)
+- MNIST can not represent modern CV tasks. Check out ["François Cholle: Ideas on MNIST do not transfer to real CV."](https://twitter.com/fchollet/status/852594987527045120)
 
 ## Get the Data
 
@@ -96,7 +96,7 @@ As one of the most popular dataset in the Machine Learning community, people hav
 
 
 ## Benchmark
-We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers with different parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
+We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers (no deep learning) with different parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
 
 <img src="doc/img/benchmark.gif" width="100%">
 
@@ -107,12 +107,13 @@ You are welcome to submit your benchmark. Please create a new issue, your result
 | Classifier | Preprocessing | Test accuracy | Submitter| Code |
 | --- | --- | --- | --- | --- |
 |2 Conv Layers with max pooling (Keras) | None | 0.876 | [Kashif Rasul](https://twitter.com/krasul) | [zalando_mnist_cnn](https://gist.github.com/kashif/76792939dd6f473b7404474989cb62a8) |
-|2 Conv Layers with max pooling (Tensorflow) | None | 0.916| [Tensorflow's doc](https://www.tensorflow.org/tutorials/layers) | [convnet](/benchmark/convnet.py)|
+|2 Conv Layers with max pooling (Tensorflow) >300 epochs | None | 0.916| [Tensorflow's doc](https://www.tensorflow.org/tutorials/layers) | [convnet](/benchmark/convnet.py)|
 |Simple 2 layer convnet <100K parameter | None | 0.925 | [@hardmaru](https://twitter.com/hardmaru) | [pytorch_tiny_custom_mnist_adam](https://github.com/hardmaru/pytorch_notebooks/blob/master/pytorch_tiny_custom_mnist_adam.ipynb)| 
 |GRU+SVM | None| 0.888 | [@AFAgarap](https://github.com/AFAgarap) | [gru_svm_zalando](https://gist.githubusercontent.com/AFAgarap/92c1c4a5dd771999b0201ec0e7edfee0/raw/828fbda0e466dacb1fad66549e0e3022e1c7263a/gru_svm_zalando.py)|
 |GRU+SVM with dropout | None| 0.855 | [@AFAgarap](https://github.com/AFAgarap) | [gru_svm_zalando_dropout](https://gist.githubusercontent.com/AFAgarap/92c1c4a5dd771999b0201ec0e7edfee0/raw/828fbda0e466dacb1fad66549e0e3022e1c7263a/gru_svm_zalando_dropout.py)|
 |WRN40-4 8.9M params | standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips)| 0.967 | [@ajbrock](https://github.com/ajbrock) | [WideResNet](https://github.com/xternalz/WideResNet-pytorch) & [Freezout](https://github.com/ajbrock/FreezeOut) |
 |DenseNet-BC 768K params| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.954 | [@ajbrock](https://github.com/ajbrock)  | [DenseNets](https://github.com/bamos/densenet.pytorch) & [Freezout](https://github.com/ajbrock/FreezeOut) |
+|MobileNet | augmentation (horizontal flips)| 0.950| [@苏剑林](https://github.com/bojone)| [Chinese blog post](http://kexue.fm/archives/4556/)|
 
 ### Other Explorations
 
