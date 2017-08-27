@@ -111,8 +111,8 @@ You are welcome to submit your benchmark. Please create a new issue, your result
 |Simple 2 layer convnet <100K parameter | None | 0.925 | [@hardmaru](https://twitter.com/hardmaru) | [pytorch_tiny_custom_mnist_adam](https://github.com/hardmaru/pytorch_notebooks/blob/master/pytorch_tiny_custom_mnist_adam.ipynb)| 
 |GRU+SVM | None| 0.888 | [@AFAgarap](https://github.com/AFAgarap) | [gru_svm_zalando](https://gist.githubusercontent.com/AFAgarap/92c1c4a5dd771999b0201ec0e7edfee0/raw/828fbda0e466dacb1fad66549e0e3022e1c7263a/gru_svm_zalando.py)|
 |GRU+SVM with dropout | None| 0.855 | [@AFAgarap](https://github.com/AFAgarap) | [gru_svm_zalando_dropout](https://gist.githubusercontent.com/AFAgarap/92c1c4a5dd771999b0201ec0e7edfee0/raw/828fbda0e466dacb1fad66549e0e3022e1c7263a/gru_svm_zalando_dropout.py)|
-|WRN40-4 8.9M params | standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips)| 0.967 | [@ajbrock](https://github.com/ajbrock) | :cry: [NA](https://github.com/zalandoresearch/fashion-mnist/issues/10) |
-|DenseNet-BC 768K | standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.954 | [@ajbrock](https://github.com/ajbrock)  | :cry: [NA](https://github.com/zalandoresearch/fashion-mnist/issues/10)|
+|WRN40-4 8.9M params | standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips)| 0.967 | [@ajbrock](https://github.com/ajbrock) | [WideResNet](https://github.com/xternalz/WideResNet-pytorch) & [Freezout](https://github.com/ajbrock/FreezeOut) |
+|DenseNet-BC 768K params| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.954 | [@ajbrock](https://github.com/ajbrock)  | [DenseNets](https://github.com/bamos/densenet.pytorch) & [Freezout](https://github.com/ajbrock/FreezeOut) |
 
 ### Other Explorations
 
