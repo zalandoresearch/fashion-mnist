@@ -135,14 +135,20 @@ data.train.next_batch(100)
 ## 在论文中引用Fashion-MNIST
 如果你在你的研究工作中使用了这个数据集，欢迎你引用这篇论文：
 
-> [Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms.](doc/arxiv.pdf) Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv: TBA
+**Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms. Han Xiao, Kashif Rasul, Roland Vollgraf. [arXiv:1708.07747](http://arxiv.org/abs/1708.07747)**
 
-使用Bibtex:
+亦可使用Biblatex:
 ```latex
-TBA
+@online{xiao2017/online,
+  author       = {Han Xiao and Kashif Rasul and Roland Vollgraf},
+  title        = {Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms},
+  date         = {2017-08-28},
+  year         = {2017},
+  eprintclass  = {cs.LG},
+  eprinttype   = {arXiv},
+  eprint       = {cs.LG/1708.07747},
+}
 ```
-这篇论文将在 Mon, 28 Aug 2017 00:00:00 GMT发表在arXiv上。
-
 
 ## License
 
