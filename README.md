@@ -90,7 +90,7 @@ As one of the most popular dataset in the Machine Learning community, people hav
 - [C#](https://jamesmccaffrey.wordpress.com/2013/11/23/reading-the-mnist-data-set-with-c/)
 - [NodeJS](https://github.com/ApelSYN/mnist_dl) and [this](https://github.com/cazala/mnist)
 - [Swift](https://github.com/simonlee2/MNISTKit)
-- [R](https://gist.github.com/brendano/39760)
+- [R](https://gist.github.com/brendano/39760) and [this](https://github.com/maddin79/darch)
 - [Matlab](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset) and [this](https://de.mathworks.com/matlabcentral/fileexchange/27675-read-digits-and-labels-from-mnist-database?focused=5154133&tab=function)
 - [Ruby](https://github.com/gbuesing/mnist-ruby-test/blob/master/train/mnist_loader.rb)
 
