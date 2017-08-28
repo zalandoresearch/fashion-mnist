@@ -119,10 +119,10 @@ data.train.next_batch(100)
 ### 更多在Fashion-MNIST上的探索和尝试
 
 #### 生成对抗网络 (GANs) 
+- [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections) (**推荐阅读！** 注意不同GANs的算法在Fashion-MNIST上生成的样本明显不同，而这点在经典的MNIST数据集上是观察不到的。)
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
-- [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections)
 
 #### 其它
 - [Use RNN and CNN in PyTorch for Fashion-MNIST classification](https://github.com/mayurbhangale/fashion-mnist-pytorch)

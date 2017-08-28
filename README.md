@@ -117,10 +117,10 @@ You are welcome to submit your benchmark; simply create a new issue and we'll li
 ### Other Explorations of Fashion-MNIST
 
 #### Generative adversarial networks (GANs) 
+- [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections) (**Recommend to read!** Note how various GANs generates different results on Fashion-MNIST, which can not be easily observed on the original MNIST.)
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
-- [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections)
 
 #### Misc.
 - [Use RNN and CNN in PyTorch for Fashion-MNIST classification](https://github.com/mayurbhangale/fashion-mnist-pytorch)
