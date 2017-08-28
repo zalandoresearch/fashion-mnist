@@ -22,9 +22,9 @@ The original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains a lot o
 
 Seriously, we are talking about replacing MNIST. Here are some good reasons:
 
-- MNIST is too easy. Check out [our side-by-side benchmark.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) and ["Most pairs of MNIST digits can be distinguished pretty well by just one pixel"](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)
-- MNIST is overused. Check out ["Ian Goodfellow wants people to move away from mnist."](https://twitter.com/goodfellow_ian/status/852591106655043584)
-- MNIST can not represent modern CV tasks. Check out ["François Cholle: Ideas on MNIST do not transfer to real CV."](https://twitter.com/fchollet/status/852594987527045120)
+- **MNIST is too easy.** Convolutional nets can get 99.7% on MNIST. Classic machine learning algorithms can also get 97% easily. Check out [our side-by-side benchmark for Fashion-MNIST vs. MNIST,](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) and read about ["Most pairs of MNIST digits can be distinguished pretty well by just one pixel"](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)
+- **MNIST is overused.** Check out ["Ian Goodfellow wants people to move away from mnist."](https://twitter.com/goodfellow_ian/status/852591106655043584)
+- **MNIST can not represent modern CV tasks.** Check out ["François Cholle: Ideas on MNIST do not transfer to real CV."](https://twitter.com/fchollet/status/852594987527045120)
 
 ## Get the Data
 
@@ -96,7 +96,7 @@ As one of the most popular dataset in the Machine Learning community, people hav
 
 
 ## Benchmark
-We build an automatic benchmarking system based on `scikit-learn`, covering 125 classifiers (no deep learning) with different parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
+We build an automatic benchmarking system based on `scikit-learn`, covering 128 classifiers (but no deep learning) with different parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
 
 <img src="doc/img/benchmark.gif" width="100%">
 
@@ -115,12 +115,16 @@ You are welcome to submit your benchmark. Please create a new issue, your result
 |DenseNet-BC 768K params| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.954 | [@ajbrock](https://github.com/ajbrock)  | [DenseNets](https://github.com/bamos/densenet.pytorch) & [Freezout](https://github.com/ajbrock/FreezeOut) |
 |MobileNet | augmentation (horizontal flips)| 0.950| [@苏剑林](https://github.com/bojone)| [Chinese blog post](http://kexue.fm/archives/4556/)|
 
-### Other Explorations
+### Other Explorations on Fashion-MNIST
 
 #### Generative adversarial networks (GANs) 
-- [Make  a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
+- [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
+- [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections)
+
+#### Misc
+- [Use RNN and CNN in PyTorch for Fashion-MNIST classification](https://github.com/mayurbhangale/fashion-mnist-pytorch)
 
 ## Visualization
 
