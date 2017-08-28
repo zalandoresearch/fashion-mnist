@@ -113,8 +113,8 @@ You are welcome to submit your benchmark; simply create a new issue and we'll li
 |WRN40-4 8.9M params | standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips)| 0.967 | - |[@ajbrock](https://github.com/ajbrock) | [WideResNet](https://github.com/xternalz/WideResNet-pytorch) & [Freezout](https://github.com/ajbrock/FreezeOut) |
 |DenseNet-BC 768K params| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.954 | - |[@ajbrock](https://github.com/ajbrock)  | [DenseNets](https://github.com/bamos/densenet.pytorch) & [Freezout](https://github.com/ajbrock/FreezeOut) |
 |MobileNet | augmentation (horizontal flips)| 0.950|- | [@苏剑林](https://github.com/bojone)| [Chinese blog post](http://kexue.fm/archives/4556/)|
-| ResNet18 | Normalization, random horizontal flip, random vertical flip, random translation, random rotation. | 0.949 | 0.979 |[Kyriakos Efthymiadis](https://github.com/kefth)| [repo](https://github.com/kefth/fashion-mnist)
-| simple 2-layer conv net | Normalization, random horizontal flip, random vertical flip, random translation, random rotation. | 0.919 |0.971 | [Kyriakos Efthymiadis](https://github.com/kefth)| [repo](https://github.com/kefth/fashion-mnist)
+| ResNet18 | Normalization, random horizontal flip, random vertical flip, random translation, random rotation. | 0.949 | 0.979 |[Kyriakos Efthymiadis](https://github.com/kefth)| [:link:](https://github.com/kefth/fashion-mnist)
+| simple 2-layer conv net | Normalization, random horizontal flip, random vertical flip, random translation, random rotation. | 0.919 |0.971 | [Kyriakos Efthymiadis](https://github.com/kefth)| [:link:](https://github.com/kefth/fashion-mnist)
 
 ### Other Explorations of Fashion-MNIST
 
