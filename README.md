@@ -99,7 +99,7 @@ We built an automatic benchmarking system based on `scikit-learn` that covers 12
 
 <img src="doc/img/benchmark.gif" width="100%">
 
-You can reproduce the results by running `benchmark/runner.py`. We recommend building and deploying this Docker container. 
+You can reproduce the results by running `benchmark/runner.py`. We recommend building and deploying [this Dockerfile](Dockerfile). 
 
 You are welcome to submit your benchmark; simply create a new issue and we'll list your results here. Before doing that, please make sure it does not already appear [in this list](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/). Visit our [contributor guidelines](https://github.com/zalandoresearch/fashion-mnist#contributing) for additional details.
 
