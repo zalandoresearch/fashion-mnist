@@ -4,31 +4,29 @@
 [![Gitter](https://badges.gitter.im/zalandoresearch/fashion-mnist.svg)](https://gitter.im/fashion-mnist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [![Readme-CN](https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3-green.svg)](README.zh-CN.md)
 
-A dataset of Zalando's article images consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. `Fashion-MNIST` is intended to serve as a direct **drop-in replacement** of the original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) for benchmarking machine learning algorithms.
+`Fashion-MNIST` is a dataset of [Zalando](https://jobs.zalando.com/tech/)'s article images—consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. We intend `Fashion-MNIST` to serve as a direct **drop-in replacement** for the original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) for benchmarking machine learning algorithms. It shares the same image size and structure of training and testing splits.
 
-Here is an example how the data looks like (*each class takes three-rows*):
+Here's an example how the data looks (*each class takes three-rows*):
 
 ![](doc/img/fashion-mnist-sprite.png)
 
 <img src="doc/img/embedding.gif" width="100%">
 
-## Why?
+## Why we made Fashion-MNIST
 
-The original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains a lot of handwritten digits. People from AI/ML/Data Science community love this dataset and use it as a benchmark to validate their algorithms. In fact, MNIST is often the first dataset they would try on. *"If it doesn't work on MNIST, it **won't work** at all"*, they said. *"Well, if it does work on MNIST, it may still fail on others."* 
-
-`Fashion-MNIST` is intended to serve as a direct drop-in replacement for the original MNIST dataset to benchmark machine learning algorithms, as it shares the same image size and the structure of training and testing splits.
+The original [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains a lot of handwritten digits. Members of the AI/ML/Data Science community love this dataset and use it as a benchmark to validate their algorithms. In fact, MNIST is often the first dataset researchers try. *"If it doesn't work on MNIST, it **won't work** at all"*, they said. *"Well, if it does work on MNIST, it may still fail on others."* 
 
 ### To Serious Machine Learning Researchers
 
 Seriously, we are talking about replacing MNIST. Here are some good reasons:
 
-- **MNIST is too easy.** Convolutional nets can get 99.7% on MNIST. Classic machine learning algorithms can also get 97% easily. Check out [our side-by-side benchmark for Fashion-MNIST vs. MNIST,](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) and read about ["Most pairs of MNIST digits can be distinguished pretty well by just one pixel"](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)
-- **MNIST is overused.** Check out ["Ian Goodfellow wants people to move away from mnist."](https://twitter.com/goodfellow_ian/status/852591106655043584)
-- **MNIST can not represent modern CV tasks.** Check out ["François Cholle: Ideas on MNIST do not transfer to real CV."](https://twitter.com/fchollet/status/852594987527045120)
+- **MNIST is too easy.** Convolutional nets can achieve 99.7% on MNIST. Classic machine learning algorithms can also achieve 97% easily. Check out [our side-by-side benchmark for Fashion-MNIST vs. MNIST](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/), and read "[Most pairs of MNIST digits can be distinguished pretty well by just one pixel](https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478)."
+- **MNIST is overused.** In [this April 2017 Twitter thread](https://twitter.com/goodfellow_ian/status/852591106655043584), Google Brain research scientist and deep learning expert Ian Goodfellow calls for people to move away from MNIST.
+- **MNIST can not represent modern CV tasks**, as noted in [this April 2017 Twitter thread](https://twitter.com/fchollet/status/852594987527045120), deep learning expert/Keras author François Chollet.
 
 ## Get the Data
 
-You can use direct links to download the the dataset. The data is stored in the **same** format as the original [MNIST data](http://yann.lecun.com/exdb/mnist/).
+You can use direct links to download the dataset. The data is stored in the **same** format as the original [MNIST data](http://yann.lecun.com/exdb/mnist/).
 
 | Name  | Content | Examples | Size | Link
 | --- | --- |--- | --- |--- |
@@ -37,7 +35,7 @@ You can use direct links to download the the dataset. The data is stored in the 
 | `t10k-images-idx3-ubyte.gz`  | test set images  | 10,000|4.2 MBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz)|
 | `t10k-labels-idx1-ubyte.gz`  | test set labels  | 10,000| 5.0 KBytes | [Download](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|
 
-Or you can clone this repository, the dataset is under `data/fashion`. This repo contains some scripts for benchmark and visualization.
+Alternatively, you can clone this GitHub repository; the dataset appears under `data/fashion`. This repo also contains some scripts for benchmark and visualization.
    
 ```bash
 git clone git@github.com:zalandoresearch/fashion-mnist.git
@@ -61,8 +59,9 @@ Each training and test example is assigned to one of the following labels:
 
 ## Usage
 
-### Loading data with Python (`numpy` is required)
-- use `utils/mnist_reader` in this repo:
+### Loading data with Python (requires [NumPy](http://www.numpy.org/))
+
+Use `utils/mnist_reader` in this repo:
 ```python
 import mnist_reader
 X_train, y_train = mnist_reader.load_mnist('data/fashion', kind='train')
@@ -79,7 +78,7 @@ data.train.next_batch(100)
 
 ### Loading data with other languages
 
-As one of the most popular dataset in the Machine Learning community, people have implemented MNIST loader in many languages. They can be used to load `Fashion-MNIST` dataset as well (may require decompressing first). Note that they are not tested by us.
+As one of the Machine Learning community's most popular datasets, MNIST has inspired people to implement loaders in many different languages. You can use these loaders with the `Fashion-MNIST` dataset as well. (Note: may require decompressing first.) To date, we haven't yet tested all of these loaders with Fashion-MNIST.
 
 - [C](https://stackoverflow.com/a/10409376)
 - [C++](https://github.com/wichtounet/mnist)
@@ -96,13 +95,13 @@ As one of the most popular dataset in the Machine Learning community, people hav
 
 
 ## Benchmark
-We build an automatic benchmarking system based on `scikit-learn`, covering 128 classifiers (but no deep learning) with different parameters. [Results can be found here.](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
+We built an automatic benchmarking system based on `scikit-learn` that covers 128 classifiers (but no deep learning) with different parameters. [Find the results here](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/).
 
 <img src="doc/img/benchmark.gif" width="100%">
 
-You can reproduce the results by running `benchmark/runner.py`. A recommend way is to  build and deploy this docker container. 
+You can reproduce the results by running `benchmark/runner.py`. We recommend building and deploying this Docker container. 
 
-You are welcome to submit your benchmark. Please create a new issue, your results will be listed here. Check out the [Contributing](https://github.com/zalandoresearch/fashion-mnist#contributing) section for details. Before submitting a benchmark, please make sure it is not listed [in this list](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/).  
+You are welcome to submit your benchmark; simply create a new issue and we'll list your results here. Before doing that, please make sure it does not already appear [in this list](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/). Visit our [contributor guidelines](https://github.com/zalandoresearch/fashion-mnist#contributing) for additional details.
 
 | Classifier | Preprocessing | Test accuracy | Submitter| Code |
 | --- | --- | --- | --- | --- |
@@ -115,7 +114,7 @@ You are welcome to submit your benchmark. Please create a new issue, your result
 |DenseNet-BC 768K params| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.954 | [@ajbrock](https://github.com/ajbrock)  | [DenseNets](https://github.com/bamos/densenet.pytorch) & [Freezout](https://github.com/ajbrock/FreezeOut) |
 |MobileNet | augmentation (horizontal flips)| 0.950| [@苏剑林](https://github.com/bojone)| [Chinese blog post](http://kexue.fm/archives/4556/)|
 
-### Other Explorations on Fashion-MNIST
+### Other Explorations of Fashion-MNIST
 
 #### Generative adversarial networks (GANs) 
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
@@ -123,7 +122,7 @@ You are welcome to submit your benchmark. Please create a new issue, your result
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
 - [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections)
 
-#### Misc
+#### Misc.
 - [Use RNN and CNN in PyTorch for Fashion-MNIST classification](https://github.com/mayurbhangale/fashion-mnist-pytorch)
 
 ## Visualization
@@ -134,14 +133,12 @@ You are welcome to submit your benchmark. Please create a new issue, your result
 ### PCA on Fashion-MNIST (left) and original MNIST (right) 
 <img src="doc/img/f04ba662.png" width="50%"><img src="doc/img/4433f0e1.png" width="50%">
 
-
 ## Contributing
 
-Thanks for your interest in contributing! There are many ways to contribute to this project. [Get started here!](/CONTRIBUTING.md) And please check these [open issues](https://github.com/zalandoresearch/fashion-mnist/issues) for specific tasks.
+Thanks for your interest in contributing! There are many ways to get involved; start with our [contributor guidelines](/CONTRIBUTING.md) and then check these [open issues](https://github.com/zalandoresearch/fashion-mnist/issues) for specific tasks.
 
 ## Contact
-For discussion on the dataset, please use [![Gitter](https://badges.gitter.im/zalandoresearch/fashion-mnist.svg)](https://gitter.im/fashion-mnist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
-
+To discuss the dataset, please use [![Gitter](https://badges.gitter.im/zalandoresearch/fashion-mnist.svg)](https://gitter.im/fashion-mnist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
 
 ## Citing Fashion-MNIST
 If you use Fashion-MNIST in a scientific publication, we would appreciate references to the following paper:
