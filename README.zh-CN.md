@@ -97,7 +97,7 @@ data.train.next_batch(100)
 
 
 ## 基准测试
-我们使用`scikit-learn`做了一套自动评测系统。它涵盖了除深度学习之外的125种经典机器学习模型（包含不同的参数）。[你可以在这里以互动的方式查看结果。](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
+我们使用`scikit-learn`做了一套自动评测系统。它涵盖了除深度学习之外的128种经典机器学习模型（包含不同的参数）。[你可以在这里以互动的方式查看结果。](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/)
 
 <img src="doc/img/benchmark.gif" width="100%">
 
