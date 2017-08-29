@@ -75,7 +75,7 @@ X_test, y_test = mnist_reader.load_mnist('data/fashion', kind='t10k')
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets('data/fashion')
 
-data.train.next_batch(100)
+data.train.next_batch(BATCH_SIZE)
 ```
 
 ### Loading data with other languages
