@@ -137,7 +137,7 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
 
 #### Misc.
-- [Apache MXNet added Fashion-MNIST](https://github.com/apache/incubator-mxnet/pull/7635)
+- [Apache MXNet Gluon Package added Fashion-MNIST](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
 - [deeplearn.js added Fashion-MNIST to the model builder demo](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
 - [Use RNN and CNN in PyTorch for Fashion-MNIST classification](https://github.com/mayurbhangale/fashion-mnist-pytorch)
 
