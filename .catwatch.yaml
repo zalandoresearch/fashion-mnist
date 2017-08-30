@@ -1,0 +1,3 @@
+# this file will be read by Catwatch
+# see https://github.com/zalando/catwatch/issues/32
+title: A MNIST-like fashion product database.
