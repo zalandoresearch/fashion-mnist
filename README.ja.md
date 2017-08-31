@@ -75,6 +75,9 @@ X_test, y_test = mnist_reader.load_mnist('data/fashion', kind='t10k')
 ```
 
 ### でデータをロードする
+
+[私たちのデータセットをダウンロードしてください](#データを取得する)ことを確認し、それを `data/fashion`の下に置きます。それ以外の場合、* Tensorflowは自動的に元のMNISTをダウンロードして使用します。 *
+
 ```python
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets('data/fashion')
