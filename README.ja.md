@@ -85,6 +85,14 @@ data = input_data.read_data_sets('data/fashion')
 data.train.next_batch(100)
 ```
 
+### 他の機械学習ライブラリを使用する
+- [Apache MXNet Gluon (master ver.)](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
+- [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
+- [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
+
+ようこそ私たちに参加して、各機械学習ライブラリ用の`Fashion-MNIST`のサポートを追加してください。
+
+
 ### 他の言語でデータをロードする
 
 機械学習コミュニティでもっとも人気のあるデータセットの一つですので、人々は多くの言語で MNIST loader を実装してきています。それらは `Fashion-MNIST` データセットをロードするためにも使用できるでしょう (最初に decompress する必要があるかもしれません)。それらは私たちによってテストはされていないことには注意してください。
@@ -128,7 +136,8 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 |GoogleNet with cross-entropy loss | None | 0.937 | - | [@Cenk Bircanoğlu](https://github.com/cenkbircanoglu) | [:link:](https://github.com/cenkbircanoglu/openface/tree/master/fashion_mnist)|
 |AlexNet with Triplet loss| None | 0.899 | - | [@Cenk Bircanoğlu](https://github.com/cenkbircanoglu) | [:link:](https://github.com/cenkbircanoglu/openface/tree/master/fashion_mnist)|
 |SqueezeNet with cyclical learning rate 200 epochs| None| 0.900| - | [@snakers4](https://github.com/snakers4) | [:link:](https://github.com/zalandoresearch/fashion-mnist/files/1263340/squeeze_net_mnist.zip)|
-|Dual path network with wide resnet 28-10|standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) |0.957|-|[@Queequeg](https://github.com/Queequeg92)|[:link:](https://github.com/Queequeg92/DualPathNet)
+|Dual path network with wide resnet 28-10|standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) |0.957|-|[@Queequeg](https://github.com/Queequeg92)|[:link:](https://github.com/Queequeg92/DualPathNet)|
+|MLP 256-128-64| None | 0.900| - | [@lianghong](https://github.com/lianghong)| [:link:](https://github.com/lianghong/fashion_mnist-on-mxnet)| 
 
 
 ### 他の探求
@@ -139,10 +148,6 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
 
-#### Misc.
-- [Apache MXNet Gluon Package added Fashion-MNIST](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
-- [deeplearn.js added Fashion-MNIST to the model builder demo](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
-- [Use RNN and CNN in PyTorch for Fashion-MNIST classification](https://github.com/mayurbhangale/fashion-mnist-pytorch)
 
 ## 可視化
 

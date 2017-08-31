@@ -82,6 +82,14 @@ data = input_data.read_data_sets('data/fashion')
 data.train.next_batch(100)
 ```
 
+### 使用其它机器学习库
+- [Apache MXNet Gluon (master ver.)](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
+- [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
+- [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
+
+欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。
+
+
 ### 使用其它的语言
 
 作为机器学习领域里最常使用的数据集，人们用各种语言为MNIST开发了很多载入工具。有一些方法需要先解压数据文件。注意，我们并没有测试过所有的载入方法。
@@ -127,7 +135,8 @@ data.train.next_batch(100)
 |GoogleNet with cross-entropy loss | None | 0.937 | - | [@Cenk Bircanoğlu](https://github.com/cenkbircanoglu) | [:link:](https://github.com/cenkbircanoglu/openface/tree/master/fashion_mnist)|
 |AlexNet with Triplet loss| None | 0.899 | - | [@Cenk Bircanoğlu](https://github.com/cenkbircanoglu) | [:link:](https://github.com/cenkbircanoglu/openface/tree/master/fashion_mnist)|
 |SqueezeNet with cyclical learning rate 200 epochs| None| 0.900| - | [@snakers4](https://github.com/snakers4) | [:link:](https://github.com/zalandoresearch/fashion-mnist/files/1263340/squeeze_net_mnist.zip)|
-|Dual path network with wide resnet 28-10|standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) |0.957|-|[@Queequeg](https://github.com/Queequeg92)|[:link:](https://github.com/Queequeg92/DualPathNet)
+|Dual path network with wide resnet 28-10|standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) |0.957|-|[@Queequeg](https://github.com/Queequeg92)|[:link:](https://github.com/Queequeg92/DualPathNet)|
+|MLP 256-128-64| None | 0.900| - | [@lianghong](https://github.com/lianghong)| [:link:](https://github.com/lianghong/fashion_mnist-on-mxnet)| 
 
 ### 更多在Fashion-MNIST上的探索和尝试
 
@@ -137,10 +146,6 @@ data.train.next_batch(100)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
 
-#### 其它
-- [Apache MXNet Gluon Package added Fashion-MNIST](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
-- [deeplearn.js added Fashion-MNIST to the model builder demo](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
-- [Use RNN and CNN in PyTorch for Fashion-MNIST classification](https://github.com/mayurbhangale/fashion-mnist-pytorch)
 
 ## 数据可视化
 

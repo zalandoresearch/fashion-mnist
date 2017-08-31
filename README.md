@@ -80,6 +80,13 @@ data = input_data.read_data_sets('data/fashion')
 data.train.next_batch(BATCH_SIZE)
 ```
 
+### Loading data with other machine learning packages 
+- [Apache MXNet Gluon (Master ver.)](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
+- [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
+- [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
+
+You are welcome to make pull requests to other open-source machine learning packages, improving their support on `Fashion-MNIST` dataset.
+
 ### Loading data with other languages
 
 As one of the Machine Learning community's most popular datasets, MNIST has inspired people to implement loaders in many different languages. You can use these loaders with the `Fashion-MNIST` dataset as well. (Note: may require decompressing first.) To date, we haven't yet tested all of these loaders with Fashion-MNIST.
@@ -125,7 +132,8 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 |GoogleNet with cross-entropy loss | None | 0.937 | - | [@Cenk Bircanoğlu](https://github.com/cenkbircanoglu) | [:link:](https://github.com/cenkbircanoglu/openface/tree/master/fashion_mnist)|
 |AlexNet with Triplet loss| None | 0.899 | - | [@Cenk Bircanoğlu](https://github.com/cenkbircanoglu) | [:link:](https://github.com/cenkbircanoglu/openface/tree/master/fashion_mnist)|
 |SqueezeNet with cyclical learning rate 200 epochs| None| 0.900| - | [@snakers4](https://github.com/snakers4) | [:link:](https://github.com/zalandoresearch/fashion-mnist/files/1263340/squeeze_net_mnist.zip)|
-|Dual path network with wide resnet 28-10|standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) |0.957|-|[@Queequeg](https://github.com/Queequeg92)|[:link:](https://github.com/Queequeg92/DualPathNet)
+|Dual path network with wide resnet 28-10|standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) |0.957|-|[@Queequeg](https://github.com/Queequeg92)|[:link:](https://github.com/Queequeg92/DualPathNet)|
+|MLP 256-128-64| None | 0.900| - | [@lianghong](https://github.com/lianghong)| [:link:](https://github.com/lianghong/fashion_mnist-on-mxnet)| 
 
 ### Other Explorations of Fashion-MNIST
 
@@ -134,11 +142,6 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
-
-#### Misc.
-- [Apache MXNet Gluon Package added Fashion-MNIST](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
-- [deeplearn.js added Fashion-MNIST to the model builder demo](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
-- [Use RNN and CNN in PyTorch for Fashion-MNIST classification](https://github.com/mayurbhangale/fashion-mnist-pytorch)
 
 
 
