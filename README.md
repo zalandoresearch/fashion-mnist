@@ -71,7 +71,7 @@ X_test, y_test = mnist_reader.load_mnist('data/fashion', kind='t10k')
 ```
 
 ### Loading data with Tensorflow
-Make sure you have [downloaded the data](#get-the-data) and placed it in `data/fashion`. Otherwise, *Tensorflow will download and use the original MNIST if you are giving a empty folder.*
+Make sure you have [downloaded the data](#get-the-data) and placed it in `data/fashion`. Otherwise, *Tensorflow will download and use the original MNIST.*
 
 ```python
 from tensorflow.examples.tutorials.mnist import input_data
