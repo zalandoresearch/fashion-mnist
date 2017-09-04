@@ -84,6 +84,7 @@ data.train.next_batch(BATCH_SIZE)
 - [Apache MXNet Gluon (Master ver.)](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
 - [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
+- [Pytorch](https://github.com/pytorch/vision#mnist)
 
 You are welcome to make pull requests to other open-source machine learning packages, improving their support on `Fashion-MNIST` dataset.
 
