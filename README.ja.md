@@ -94,7 +94,7 @@ data.train.next_batch(100)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](https://github.com/pytorch/vision#mnist)
 - [Keras (master ver.)](https://github.com/fchollet/keras/blob/master/docs/templates/datasets.md#fashion-mnist-database-of-fashion-articles)
-- [Observations](https://github.com/edwardlib/observations/tree/master/observations)
+- [Edward](http://edwardlib.org/api/observations/fashion_mnist)
 
 ようこそ私たちに参加して、各機械学習ライブラリ用の`Fashion-MNIST`のサポートを追加してください。
 
