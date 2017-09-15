@@ -82,7 +82,7 @@ X_test, y_test = mnist_reader.load_mnist('data/fashion', kind='t10k')
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets('data/fashion')
 
-data.train.next_batch(100)
+data.train.next_batch(BATCH_SIZE)
 ```
 
 ### 他の機械学習ライブラリを使用する
@@ -94,7 +94,9 @@ data.train.next_batch(100)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](https://github.com/pytorch/vision#mnist)
 - [Keras (master ver.)](https://github.com/fchollet/keras/blob/master/docs/templates/datasets.md#fashion-mnist-database-of-fashion-articles)
-- [Observations](https://github.com/edwardlib/observations/tree/master/observations)
+- [Edward](http://edwardlib.org/api/observations/fashion_mnist)
+- [Tensorflow (master ver.)](https://github.com/tensorflow/tensorflow/pull/12983)
+
 
 ようこそ私たちに参加して、各機械学習ライブラリ用の`Fashion-MNIST`のサポートを追加してください。
 
