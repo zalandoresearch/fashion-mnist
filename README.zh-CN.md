@@ -79,7 +79,12 @@ X_test, y_test = mnist_reader.load_mnist('data/fashion', kind='t10k')
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets('data/fashion')
 
-data.train.next_batch(100)
+data.train.next_batch(BATCH_SIZE)
+```
+
+注意，Tensorflow (master ver.) 支持向`read_data_sets`函数传入MNIST数据集的地址。你可以使用： 
+```python
+data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/')
 ```
 
 ### 使用其它机器学习库
@@ -90,6 +95,8 @@ data.train.next_batch(100)
 - [Pytorch](https://github.com/pytorch/vision#mnist)
 - [Keras (master ver.)](https://github.com/fchollet/keras/blob/master/docs/templates/datasets.md#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
+- [Tensorflow (master ver.)](https://github.com/tensorflow/tensorflow/pull/12983)
+
 
 欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。
 

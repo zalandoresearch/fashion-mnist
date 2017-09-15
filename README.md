@@ -80,6 +80,11 @@ data = input_data.read_data_sets('data/fashion')
 data.train.next_batch(BATCH_SIZE)
 ```
 
+Note, Tensorflow (master ver.) supports passing in a source url to the `read_data_sets`. You may use: 
+```python
+data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/')
+```
+
 ### Loading data with other machine learning libraries 
 To date, the following libraries have included `Fashion-MNIST` as a built-in dataset. Therefore, you don't need to download `Fashion-MNIST` by yourself. Just follow their API and you are ready to go.
 
@@ -89,6 +94,7 @@ To date, the following libraries have included `Fashion-MNIST` as a built-in dat
 - [Pytorch](https://github.com/pytorch/vision#mnist)
 - [Keras (master ver.)](https://github.com/fchollet/keras/blob/master/docs/templates/datasets.md#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
+- [Tensorflow (master ver.)](https://github.com/tensorflow/tensorflow/pull/12983)
 
 You are welcome to make pull requests to other open-source machine learning packages, improving their support on `Fashion-MNIST` dataset.
 
