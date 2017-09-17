@@ -93,7 +93,7 @@ data.train.next_batch(BATCH_SIZE)
 - [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](https://github.com/pytorch/vision#mnist)
-- [Keras (master ver.)](https://github.com/fchollet/keras/blob/master/docs/templates/datasets.md#fashion-mnist-database-of-fashion-articles)
+- [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
 - [Tensorflow (master ver.)](https://github.com/tensorflow/tensorflow/pull/12983)
 
