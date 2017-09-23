@@ -163,7 +163,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
-
+- [live demo of Generative Adversarial Network model with deeplearn.js](http://cognitivechaos.com/playground/fashion-gan/)
 
 ## 数据可视化
 
