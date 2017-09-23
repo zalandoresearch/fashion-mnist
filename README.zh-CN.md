@@ -96,6 +96,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
 - [Tensorflow (master ver.)](https://github.com/tensorflow/tensorflow/pull/12983)
+- [Torch](https://github.com/mingloo/fashion-mnist)
 
 
 欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。

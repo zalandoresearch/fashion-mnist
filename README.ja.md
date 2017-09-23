@@ -96,6 +96,7 @@ data.train.next_batch(BATCH_SIZE)
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
 - [Tensorflow (master ver.)](https://github.com/tensorflow/tensorflow/pull/12983)
+- [Torch](https://github.com/mingloo/fashion-mnist)
 
 
 ようこそ私たちに参加して、各機械学習ライブラリ用の`Fashion-MNIST`のサポートを追加してください。
