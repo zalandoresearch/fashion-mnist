@@ -166,10 +166,16 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 - [GAN Playground - Explore Generative Adversarial Nets in your Browser](https://reiinakano.github.io/gan-playground/)
 
 #### Video Tutorial
+*Machine Learning Meets Fashion* by Yufeng G @ Google Cloud
+[![Machine Learning Meets Fashion](doc/img/ae143b2d.png)](https://youtu.be/GW08ZeHuwUM)
 
-![](doc/img/ae143b2d.png)
-![](doc/img/dd83f448.png)
-<a href="https://youtu.be/kGktiYF5upk"><img src="doc/img/e9514ab1.png" width="33%"></a>
+*动手学深度学习* by Mu Li @ Amazon AI
+[![MXNet/Gluon中文频道](doc/img/e9514ab1.png)](https://youtu.be/kGktiYF5upk)
+
+Apache MXNet으로 배워보는 딥러닝(Deep Learning) - 김무현 (AWS 솔루션즈아키텍트)
+[![Apache MXNet으로 배워보는 딥러닝(Deep Learning)](doc/img/dd83f448.png)](https://youtu.be/H66GDuLsGl4)
+
+
 
 ## Visualization
 
