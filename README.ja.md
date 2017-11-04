@@ -212,7 +212,7 @@ Biblatex entry:
 }
 ```
 
-[有谁引用了Fashion-MNIST?](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
+[誰がFashion-MNISTを引用していますか？](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
 
 
 ## License
