@@ -90,13 +90,13 @@ data.train.next_batch(BATCH_SIZE)
 
 今日まで、以下のライブラリは、組み込みデータセットとして `Fashion-MNIST`を含んでいます。 したがって、自分で`Fashion-MNIST`をダウンロードする必要はありません。 そのAPIに従うだけで、あなたは準備が整いました。
 
-- [Apache MXNet Gluon (master ver.)](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
+- [Apache MXNet Gluon](https://mxnet.incubator.apache.org/api/python/gluon/data.html)
 - [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](https://github.com/pytorch/vision#mnist)
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
-- [Tensorflow (master ver.)](https://github.com/tensorflow/tensorflow/pull/12983)
+- [Tensorflow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L212)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
 

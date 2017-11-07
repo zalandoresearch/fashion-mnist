@@ -90,13 +90,13 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 ### Loading data with other machine learning libraries 
 To date, the following libraries have included `Fashion-MNIST` as a built-in dataset. Therefore, you don't need to download `Fashion-MNIST` by yourself. Just follow their API and you are ready to go.
 
-- [Apache MXNet Gluon (master ver.)](https://mxnet.incubator.apache.org/versions/master/api/python/gluon.html#vision)
+- [Apache MXNet Gluon](https://mxnet.incubator.apache.org/api/python/gluon/data.html)
 - [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](https://github.com/pytorch/vision#mnist)
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
-- [Tensorflow (master ver.)](https://github.com/tensorflow/tensorflow/pull/12983)
+- [Tensorflow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L212)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
 
