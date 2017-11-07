@@ -31,6 +31,9 @@
 
 ## 获取数据
 
+[很多的机器学习库](#使用其它机器学习库)已经内置了Fashion-MNIST数据或接口，方便你直接使用。
+
+
 你可以使用以下链接下载这个数据集。`Fashion-MNIST`的数据集的存储方式和命名与[经典MNIST数据集](http://yann.lecun.com/exdb/mnist/)完全一致。
 
 | 名称  | 描述 | 样本数量 | 文件大小 | 链接 | MD5校验和|
@@ -157,6 +160,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 |WRN-28-10| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.959 | -| [@zhunzhong07](https://github.com/zhunzhong07)|[:link:](https://github.com/zhunzhong07/Random-Erasing)|
 |WRN-28-10 + Random Erasing| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.963 | -| [@zhunzhong07](https://github.com/zhunzhong07)|[:link:](https://github.com/zhunzhong07/Random-Erasing)|
 |Human Performance| Crowd-sourced evaluation of human (with no fashion expertise) performance. 1000 randomly sampled test images, 3 labels per image, majority labelling. | 0.835 | - | Leo  | - 
+|Capsule Network 8M parameters| Normalization and shift at most 2 pixel and horizontal flip | 0.936 | - | [@XifengGuo](https://github.com/XifengGuo)  | [:link:](https://github.com/XifengGuo/CapsNet-Fashion-MNIST)|
 
 
 ### 更多在Fashion-MNIST上的探索和尝试
@@ -171,12 +175,15 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 
 #### 视频教程
 *Machine Learning Meets Fashion* by Yufeng G @ Google Cloud
+
 [![Machine Learning Meets Fashion](doc/img/ae143b2d.png)](https://youtu.be/GW08ZeHuwUM)
 
 *动手学深度学习* by Mu Li @ Amazon AI
+
 [![MXNet/Gluon中文频道](doc/img/e9514ab1.png)](https://youtu.be/kGktiYF5upk)
 
 Apache MXNet으로 배워보는 딥러닝(Deep Learning) - 김무현 (AWS 솔루션즈아키텍트)
+
 [![Apache MXNet으로 배워보는 딥러닝(Deep Learning)](doc/img/dd83f448.png)](https://youtu.be/H66GDuLsGl4)
 
 
