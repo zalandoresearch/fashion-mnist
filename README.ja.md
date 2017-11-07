@@ -31,6 +31,7 @@ Fashion-MNIST は、機械学習アルゴリズムのベンチマークのため
 - **MNIST はモダンな CV タスクを表現できません。** “[François Cholle: Ideas on MNIST do not transfer to real CV.](https://twitter.com/fchollet/status/852594987527045120)” を確かめてください。
 
 ## データを取得する
+[多くのMLライブラリ](#他の機械学習ライブラリを使用する)には既にFashion-MNISTデータ/ APIが含まれています。試してみてください！
 
 データセットをダウンロードするためには直接リンクを使用することができます。データはオリジナルの [MNIST](http://yann.lecun.com/exdb/mnist/) データと同じフォーマットでストアされています。
 
@@ -155,6 +156,7 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 |WRN-28-10| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.959 | -| [@zhunzhong07](https://github.com/zhunzhong07)|[:link:](https://github.com/zhunzhong07/Random-Erasing)|
 |WRN-28-10 + Random Erasing| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.963 | -| [@zhunzhong07](https://github.com/zhunzhong07)|[:link:](https://github.com/zhunzhong07/Random-Erasing)|
 |Human Performance| Crowd-sourced evaluation of human (with no fashion expertise) performance. 1000 randomly sampled test images, 3 labels per image, majority labelling. | 0.835 | - | Leo  | - 
+|Capsule Network 8M parameters| Normalization and shift at most 2 pixel and horizontal flip | 0.936 | - | [@XifengGuo](https://github.com/XifengGuo)  | [:link:](https://github.com/XifengGuo/CapsNet-Fashion-MNIST)|
 
 
 ### 他の探求
@@ -169,12 +171,15 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 
 #### ビデオチュートリアル
 *Machine Learning Meets Fashion* by Yufeng G @ Google Cloud
+
 [![Machine Learning Meets Fashion](doc/img/ae143b2d.png)](https://youtu.be/GW08ZeHuwUM)
 
 *动手学深度学习* by Mu Li @ Amazon AI
+
 [![MXNet/Gluon中文频道](doc/img/e9514ab1.png)](https://youtu.be/kGktiYF5upk)
 
 Apache MXNet으로 배워보는 딥러닝(Deep Learning) - 김무현 (AWS 솔루션즈아키텍트)
+
 [![Apache MXNet으로 배워보는 딥러닝(Deep Learning)](doc/img/dd83f448.png)](https://youtu.be/H66GDuLsGl4)
 
 
