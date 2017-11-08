@@ -178,7 +178,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 #### 视频教程
 *Machine Learning Meets Fashion* by Yufeng G @ Google Cloud
 
-[![Machine Learning Meets Fashion](doc/img/ae143b2d.png)](https://youtu.be/GW08ZeHuwUM)
+[![Machine Learning Meets Fashion](doc/img/ae143b2d.png)](https://youtu.be/RJudqel8DVA)
 
 *动手学深度学习* by Mu Li @ Amazon AI
 

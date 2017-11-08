@@ -174,7 +174,7 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 #### Video Tutorial
 *Machine Learning Meets Fashion* by Yufeng G @ Google Cloud
 
-[![Machine Learning Meets Fashion](doc/img/ae143b2d.png)](https://youtu.be/GW08ZeHuwUM)
+[![Machine Learning Meets Fashion](doc/img/ae143b2d.png)](https://youtu.be/RJudqel8DVA)
 
 *动手学深度学习* by Mu Li @ Amazon AI
 
