@@ -99,8 +99,10 @@ To date, the following libraries have included `Fashion-MNIST` as a built-in dat
 - [Tensorflow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L212)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
+- [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
+- [Brine](https://www.brine.io/fashion-mnist/train)
 
-You are welcome to make pull requests to other open-source machine learning packages, improving their support on `Fashion-MNIST` dataset.
+You are welcome to make pull requests to other open-source machine learning packages, improving their support to `Fashion-MNIST` dataset.
 
 ### Loading data with other languages
 

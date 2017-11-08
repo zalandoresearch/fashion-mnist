@@ -99,7 +99,8 @@ data.train.next_batch(BATCH_SIZE)
 - [Tensorflow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L212)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
-
+- [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
+- [Brine](https://www.brine.io/fashion-mnist/train)
 
 ようこそ私たちに参加して、各機械学習ライブラリ用の`Fashion-MNIST`のサポートを追加してください。
 

@@ -101,7 +101,8 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 - [Tensorflow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L212)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
-
+- [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
+- [Brine](https://www.brine.io/fashion-mnist/train)
 
 欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。
 
