@@ -101,7 +101,8 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 - [Tensorflow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L212)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
-
+- [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
+- [Brine](https://www.brine.io/fashion-mnist/train)
 
 欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。
 
@@ -120,7 +121,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 - [NodeJS](https://github.com/ApelSYN/mnist_dl)和[这里](https://github.com/cazala/mnist)
 - [Swift](https://github.com/simonlee2/MNISTKit)
 - [R](https://gist.github.com/brendano/39760)和[这里](https://github.com/maddin79/darch)
-- [Matlab](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset)和[这里](https://de.mathworks.com/matlabcentral/fileexchange/27675-read-digits-and-labels-from-mnist-database?focused=5154133&tab=function)
+- [Matlab](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset)
 - [Ruby](https://github.com/gbuesing/mnist-ruby-test/blob/master/train/mnist_loader.rb)
 
 
