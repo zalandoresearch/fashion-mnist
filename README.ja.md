@@ -181,7 +181,7 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 
 *Introduction to Kaggle Kernels* by [Yufeng G](https://twitter.com/yufengg) @ Google Cloud
 
-[![Introduction to Kaggle Kernels](doc/img/0d7892ca.png)](https://youtu.be/FloMHMOU5Bs)
+[![Introduction to Kaggle Kernels](doc/img/853c717e.png)](https://youtu.be/FloMHMOU5Bs)
 
 *动手学深度学习* by Mu Li @ Amazon AI
 
