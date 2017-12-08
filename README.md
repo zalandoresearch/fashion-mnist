@@ -160,6 +160,7 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 |Human Performance| Crowd-sourced evaluation of human (with no fashion expertise) performance. 1000 randomly sampled test images, 3 labels per image, majority labelling. | 0.835 | - | Leo  | - |
 |Capsule Network 8M parameters| Normalization and shift at most 2 pixel and horizontal flip | 0.936 | - | [@XifengGuo](https://github.com/XifengGuo)  | [:link:](https://github.com/XifengGuo/CapsNet-Fashion-MNIST)|
 |HOG+SVM| HOG | 0.926 | - | [@subalde](https://github.com/subalde) | [:link:](https://github.com/subalde/fashion-mnist)|
+|XgBoost| scaling the pixel values to mean=0.0 and var=1.0| 0.898| 0.958| [@anktplwl91](https://github.com/anktplwl91)| [:link:](https://github.com/anktplwl91/fashion_mnist.git)|
 
 ### Other Explorations of Fashion-MNIST
 
@@ -175,6 +176,10 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 *Machine Learning Meets Fashion* by Yufeng G @ Google Cloud
 
 [![Machine Learning Meets Fashion](doc/img/ae143b2d.png)](https://youtu.be/RJudqel8DVA)
+
+*Introduction to Kaggle Kernels* by [Yufeng G](https://twitter.com/yufengg) @ Google Cloud
+
+[![Introduction to Kaggle Kernels](doc/img/0d7892ca.png)](https://youtu.be/FloMHMOU5Bs)
 
 *动手学深度学习* by Mu Li @ Amazon AI
 
