@@ -8,7 +8,7 @@
 
 翻訳 : [(株)クラスキャット セールスインフォメーション](http://tensorflow.classcat.com/2017/08/28/tensorflow-fashion-mnist/)
 
-<details><summary>Table of Contents</summary><p>
+<details><summary>目次</summary><p>
 
   * [何故でしょう？](#何故でしょう？)
   * [データを取得する](#データを取得する)
