@@ -5,6 +5,20 @@
 [![Readme-EN](https://img.shields.io/badge/README-English-green.svg)](README.md)
 [![Readme-JA](https://img.shields.io/badge/README-日本語-green.svg)](README.ja.md)
 
+<details><summary>目录</summary><p>
+
+* [为什么要做这个数据集？](#为什么要做这个数据集？)
+* [获取数据](#获取数据)
+* [如何载入数据？](#如何载入数据？)
+* [基准测试](#基准测试)
+* [数据可视化](#数据可视化)
+* [参与贡献](#参与贡献)
+* [联系](#联系)
+* [在论文中引用Fashion-MNIST](#在论文中引用Fashion-MNIST)
+* [License](#license)
+
+</p></details><p></p>
+
 
 `Fashion-MNIST`是一个替代[MNIST手写数字集](http://yann.lecun.com/exdb/mnist/)的图像数据集。 它是由Zalando（一家德国的时尚科技公司）旗下的[研究部门](https://research.zalando.com/)提供。其涵盖了来自10种类别的共7万个不同商品的正面图片。Fashion-MNIST的大小、格式和训练集/测试集划分与原始的MNIST完全一致。60000/10000的训练测试数据划分，28x28的灰度图片。你可以直接用它来测试你的机器学习和深度学习算法性能，且**不需要**改动任何的代码。
 
