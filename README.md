@@ -7,15 +7,26 @@
 
 <details><summary>Table of Contents</summary><p>
 
-* [Why we made Fashion-MNIST](#why-we-made-fashion-mnist)
-* [Get the Data](#get-the-data)
-* [Usage](#usage)
-* [Benchmark](#benchmark)
-* [Visualization](#visualization)
-* [Contributing](#contributing)
-* [Contact](#contact)
-* [Citing Fashion-MNIST](#citing-fashion-mnist)
-* [License](#license)
+  * [Why we made Fashion-MNIST](#why-we-made-fashion-mnist)
+    + [To Serious Machine Learning Researchers](#to-serious-machine-learning-researchers)
+  * [Get the Data](#get-the-data)
+    + [Labels](#labels)
+  * [Usage](#usage)
+    + [Loading data with Python (requires [NumPy](http://www.numpy.org/))](#loading-data-with-python--requires--numpy--http---wwwnumpyorg---)
+    + [Loading data with Tensorflow](#loading-data-with-tensorflow)
+    + [Loading data with other machine learning libraries](#loading-data-with-other-machine-learning-libraries)
+    + [Loading data with other languages](#loading-data-with-other-languages)
+  * [Benchmark](#benchmark)
+    + [Other Explorations of Fashion-MNIST](#other-explorations-of-fashion-mnist)
+      - [Generative adversarial networks (GANs)](#generative-adversarial-networks--gans-)
+      - [Video Tutorial](#video-tutorial)
+  * [Visualization](#visualization)
+    + [t-SNE on Fashion-MNIST (left) and original MNIST (right)](#t-sne-on-fashion-mnist--left--and-original-mnist--right-)
+    + [PCA on Fashion-MNIST (left) and original MNIST (right)](#pca-on-fashion-mnist--left--and-original-mnist--right-)
+  * [Contributing](#contributing)
+  * [Contact](#contact)
+  * [Citing Fashion-MNIST](#citing-fashion-mnist)
+  * [License](#license)
 </p></details><p></p>
 
 
