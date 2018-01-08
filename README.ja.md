@@ -110,7 +110,7 @@ data.train.next_batch(BATCH_SIZE)
 - [Pytorch](http://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
-- [Tensorflow](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L212)
+- [Tensorflow](https://www.tensorflow.org/versions/r1.5/api_docs/python/tf/keras/datasets/fashion_mnist)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
 - [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
@@ -191,6 +191,11 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 - [live demo of Generative Adversarial Network model with deeplearn.js](http://cognitivechaos.com/playground/fashion-gan/)
 - [GAN Playground - Explore Generative Adversarial Nets in your Browser](https://reiinakano.github.io/gan-playground/)
 
+#### クラスタリング
+- [Xifeng Guo's implementation](https://github.com/XifengGuo/DEC-keras) of [Unsupervised Deep Embedding for Clustering Analysis (DEC)](http://proceedings.mlr.press/v48/xieb16.pdf)
+- [Leland McInnes](@https://github.com/lmcinnes)'s [Uniform Manifold Approximation and Projection (UMAP)](https://github.com/lmcinnes/umap)
+
+
 #### ビデオチュートリアル
 *Machine Learning Meets Fashion* by Yufeng G @ Google Cloud
 
@@ -217,6 +222,9 @@ Apache MXNet으로 배워보는 딥러닝(Deep Learning) - 김무현 (AWS 솔루
 
 ### PCA on Fashion-MNIST (左) とオリジナルの MNIST (右)
 <img src="doc/img/f04ba662.png" width="50%"><img src="doc/img/4433f0e1.png" width="50%">
+
+### [UMAP](https://github.com/lmcinnes/umap) Fashion-MNIST (左) とオリジナルの MNIST (右) 
+<img src="doc/img/umap_example_fashion_mnist1.png" width="50%"><img src="doc/img/umap_example_mnist1.png" width="50%">
 
 ## 貢献する
 
