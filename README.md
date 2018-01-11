@@ -180,6 +180,8 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 
 ### Other Explorations of Fashion-MNIST
 
+#### [Fashion-MNIST on Google Scholar](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
+
 #### Generative adversarial networks (GANs) 
 - [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections) (**Recommend to read!** Note how various GANs generate different results on Fashion-MNIST, which can not be easily observed on the original MNIST.)
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
