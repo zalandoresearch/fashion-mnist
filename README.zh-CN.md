@@ -128,7 +128,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 - [C](https://stackoverflow.com/a/10409376)
 - [C++](https://github.com/wichtounet/mnist)
 - [Java](https://stackoverflow.com/a/8301949)
-- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist) and [this]((https://www.brine.io/fashion-mnist/train))
+- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist) and [this](https://www.brine.io/fashion-mnist/train)
 - [Scala](http://mxnet.io/tutorials/scala/mnist.html)
 - [Go](https://github.com/schuyler/neural-go/blob/master/mnist/mnist.go)
 - [C#](https://jamesmccaffrey.wordpress.com/2013/11/23/reading-the-mnist-data-set-with-c/)
@@ -199,7 +199,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 
 #### 聚类
 - [Xifeng Guo's implementation](https://github.com/XifengGuo/DEC-keras) of [Unsupervised Deep Embedding for Clustering Analysis (DEC)](http://proceedings.mlr.press/v48/xieb16.pdf)
-- [Leland McInnes](@https://github.com/lmcinnes)'s [Uniform Manifold Approximation and Projection (UMAP)](https://github.com/lmcinnes/umap)
+- [Leland McInnes's](https://github.com/lmcinnes) [Uniform Manifold Approximation and Projection (UMAP)](https://github.com/lmcinnes/umap)
 
 
 #### 视频教程

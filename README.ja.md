@@ -195,7 +195,7 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 
 #### クラスタリング
 - [Xifeng Guo's implementation](https://github.com/XifengGuo/DEC-keras) of [Unsupervised Deep Embedding for Clustering Analysis (DEC)](http://proceedings.mlr.press/v48/xieb16.pdf)
-- [Leland McInnes](@https://github.com/lmcinnes)'s [Uniform Manifold Approximation and Projection (UMAP)](https://github.com/lmcinnes/umap)
+- [Leland McInnes's](https://github.com/lmcinnes) [Uniform Manifold Approximation and Projection (UMAP)](https://github.com/lmcinnes/umap)
 
 
 #### ビデオチュートリアル
