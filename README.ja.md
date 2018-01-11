@@ -105,7 +105,7 @@ data.train.next_batch(BATCH_SIZE)
 今日まで、以下のライブラリは、組み込みデータセットとして `Fashion-MNIST`を含んでいます。 したがって、自分で`Fashion-MNIST`をダウンロードする必要はありません。 そのAPIに従うだけで、あなたは準備が整いました。
 
 - [Apache MXNet Gluon](https://mxnet.incubator.apache.org/api/python/gluon/data.html)
-- [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
+- [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](http://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
@@ -114,7 +114,6 @@ data.train.next_batch(BATCH_SIZE)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
 - [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
-- [Brine](https://www.brine.io/fashion-mnist/train)
 
 ようこそ私たちに参加して、各機械学習ライブラリ用の`Fashion-MNIST`のサポートを追加してください。
 
@@ -126,7 +125,7 @@ data.train.next_batch(BATCH_SIZE)
 - [C](https://stackoverflow.com/a/10409376)
 - [C++](https://github.com/wichtounet/mnist)
 - [Java](https://stackoverflow.com/a/8301949)
-- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist)
+- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist) and [this]((https://www.brine.io/fashion-mnist/train))
 - [Scala](http://mxnet.io/tutorials/scala/mnist.html)
 - [Go](https://github.com/schuyler/neural-go/blob/master/mnist/mnist.go)
 - [C#](https://jamesmccaffrey.wordpress.com/2013/11/23/reading-the-mnist-data-set-with-c/)
