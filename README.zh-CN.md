@@ -4,6 +4,7 @@
 [![Gitter](https://badges.gitter.im/zalandoresearch/fashion-mnist.svg)](https://gitter.im/fashion-mnist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [![Readme-EN](https://img.shields.io/badge/README-English-green.svg)](README.md)
 [![Readme-JA](https://img.shields.io/badge/README-日本語-green.svg)](README.ja.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <details><summary>目录</summary><p>
 
