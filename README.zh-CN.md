@@ -186,6 +186,8 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 
 ### 更多在Fashion-MNIST上的探索和尝试
 
+#### [在Google Scholar中查看引用Fashion-MNIST的论文](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
+
 #### 生成对抗网络 (GANs) 
 - [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections) (**推荐阅读！** 注意不同GANs的算法在Fashion-MNIST上生成的样本明显不同，而这点在经典的MNIST数据集上是观察不到的。)
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
