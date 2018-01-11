@@ -107,7 +107,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 ### 使用其它机器学习库
 截止今日，以下软件库中已内置了对`Fashion-MNIST`的支持。你只需要按照他们的文档载入`Fashion-MNIST`即可使用此数据集。
 - [Apache MXNet Gluon](https://mxnet.incubator.apache.org/api/python/gluon/data.html)
-- [deeplearn.js](https://pair-code.github.io/deeplearnjs/demos/model-builder/model-builder-demo.html)
+- [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](http://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
@@ -116,7 +116,6 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
 - [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
-- [Brine](https://www.brine.io/fashion-mnist/train)
 
 欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。
 
@@ -128,7 +127,7 @@ data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnis
 - [C](https://stackoverflow.com/a/10409376)
 - [C++](https://github.com/wichtounet/mnist)
 - [Java](https://stackoverflow.com/a/8301949)
-- [Python](https://pypi.python.org/pypi/python-mnist)和[这里](https://pypi.python.org/pypi/mnist)
+- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist) and [this]((https://www.brine.io/fashion-mnist/train))
 - [Scala](http://mxnet.io/tutorials/scala/mnist.html)
 - [Go](https://github.com/schuyler/neural-go/blob/master/mnist/mnist.go)
 - [C#](https://jamesmccaffrey.wordpress.com/2013/11/23/reading-the-mnist-data-set-with-c/)
