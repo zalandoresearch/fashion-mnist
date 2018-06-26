@@ -110,10 +110,10 @@ To date, the following libraries have included `Fashion-MNIST` as a built-in dat
 - [Pytorch](http://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
-- [Tensorflow](https://www.tensorflow.org/versions/r1.5/api_docs/python/tf/keras/datasets/fashion_mnist)
+- [Tensorflow](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/fashion_mnist)
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
-- [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
+- [Chainer](https://docs.chainer.org/en/stable/reference/generated/chainer.datasets.get_fashion_mnist.html)
 
 You are welcome to make pull requests to other open-source machine learning packages, improving their support to `Fashion-MNIST` dataset.
 
