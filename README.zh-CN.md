@@ -261,7 +261,7 @@ Apache MXNet으로 배워보는 딥러닝(Deep Learning) - 김무현 (AWS 솔루
 }
 ```
 
-[有谁引用了Fashion-MNIST?](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
+[有谁引用了Fashion-MNIST?](https://scholar.google.com/scholar?scisbd=2&q=%22fashion-mnist%22&hl=en&as_sdt=0,5) 
 
 
 ## License
