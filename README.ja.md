@@ -101,7 +101,7 @@ data = input_data.read_data_sets('data/fashion')
 data.train.next_batch(BATCH_SIZE)
 ```
 
-Fashion-MNISTを訓練するための高レベルのAPIであるtf.kerasの使用に関する公式のTensorflow[チュートリアルがここにあります](https://www.tensorflow.org/tutorials/keras/basic_classification)。
+Fashion-MNISTを訓練するための高レベルのAPIである`tf.keras`の使用に関する公式のTensorflow[チュートリアルがここにあります](https://www.tensorflow.org/tutorials/keras/basic_classification)。
 
 ### 他の機械学習ライブラリを使用する
 
