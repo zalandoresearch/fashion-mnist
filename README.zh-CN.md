@@ -5,6 +5,7 @@
 [![Readme-EN](https://img.shields.io/badge/README-English-green.svg)](README.md)
 [![Readme-JA](https://img.shields.io/badge/README-日本語-green.svg)](README.ja.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Year-In-Review](https://img.shields.io/badge/%F0%9F%8E%82-%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93-orange.svg)](https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/)
 
 <details><summary>目录</summary><p>
 
@@ -194,6 +195,7 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 
 ### 更多在Fashion-MNIST上的探索和尝试
 
+#### [Fashion-MNIST: 年度总结](https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/)
 #### [在Google Scholar中查看引用Fashion-MNIST的论文](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
 
 #### 生成对抗网络 (GANs) 
