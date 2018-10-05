@@ -5,7 +5,7 @@
 [![Readme-EN](https://img.shields.io/badge/README-English-green.svg)](README.md)
 [![Readme-CN](https://img.shields.io/badge/README-中文-green.svg)](README.zh-CN.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![Year-In-Review](https://img.shields.io/badge/%F0%9F%8E%82-%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%81%AE%E5%B9%B4-orange.svg)](https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/)
 
 翻訳 : [(株)クラスキャット セールスインフォメーション](http://tensorflow.classcat.com/2017/08/28/tensorflow-fashion-mnist/)
 
@@ -191,6 +191,7 @@ scikit-learn ベースの自動ベンチマーキング・システムを構築�
 
 ### 他の探求
 
+#### [Fashion-MNIST: Year in Review](https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/)
 #### [Fashion-MNIST on Google Scholar](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
 
 #### Generative adversarial networks (GANs) 
