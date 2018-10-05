@@ -5,6 +5,7 @@
 [![Readme-CN](https://img.shields.io/badge/README-中文-green.svg)](README.zh-CN.md)
 [![Readme-JA](https://img.shields.io/badge/README-日本語-green.svg)](README.ja.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Year-In-Review](https://img.shields.io/badge/%F0%9F%8E%82-Year%20in%20Review-orange.svg)](https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/)
 
 <details><summary>Table of Contents</summary><p>
 
@@ -191,6 +192,7 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 
 ### Other Explorations of Fashion-MNIST
 
+#### [Fashion-MNIST: Year in Review](https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/)
 #### [Fashion-MNIST on Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
 
 #### Generative adversarial networks (GANs) 
