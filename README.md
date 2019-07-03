@@ -110,7 +110,7 @@ To date, the following libraries have included `Fashion-MNIST` as a built-in dat
 - [Apache MXNet Gluon](https://mxnet.incubator.apache.org/api/python/gluon/data.html)
 - [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
-- [Pytorch](http://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
+- [Pytorch](https://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
 - [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
 - [Tensorflow](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/fashion_mnist)
