@@ -200,7 +200,6 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
-- [live demo of Generative Adversarial Network model with deeplearn.js](http://cognitivechaos.com/playground/fashion-gan/)
 - [GAN Playground - Explore Generative Adversarial Nets in your Browser](https://reiinakano.github.io/gan-playground/)
 
 #### Clustering
