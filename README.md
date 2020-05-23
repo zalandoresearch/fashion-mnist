@@ -107,7 +107,7 @@ Also, an official Tensorflow tutorial of using `tf.keras`, a high-level API to t
 ### Loading data with other machine learning libraries 
 To date, the following libraries have included `Fashion-MNIST` as a built-in dataset. Therefore, you don't need to download `Fashion-MNIST` by yourself. Just follow their API and you are ready to go.
 
-- [Apache MXNet Gluon](https://mxnet.incubator.apache.org/api/python/gluon/data.html)
+- [Apache MXNet Gluon](https://mxnet.apache.org/api/python/docs/api/gluon/data/vision/datasets/index.html#mxnet.gluon.data.vision.datasets.FashionMNIST)
 - [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](https://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
