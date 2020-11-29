@@ -110,12 +110,13 @@ To date, the following libraries have included `Fashion-MNIST` as a built-in dat
 - [Apache MXNet Gluon](https://mxnet.apache.org/api/python/docs/api/gluon/data/vision/datasets/index.html#mxnet.gluon.data.vision.datasets.FashionMNIST)
 - [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
-- [Pytorch](https://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
-- [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
+- [Pytorch](https://pytorch.org/docs/stable/torchvision/datasets.html#fashion-mnist)
+- [Keras](https://keras.io/api/datasets/fashion_mnist/)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
 - [Tensorflow](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/fashion_mnist)
+- [TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/fashion_mnist)
 - [Torch](https://github.com/mingloo/fashion-mnist)
-- [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
+- [JuliaML](https://juliaml.github.io/MLDatasets.jl/latest/datasets/FashionMNIST/)
 - [Chainer](https://docs.chainer.org/en/stable/reference/generated/chainer.datasets.get_fashion_mnist.html)
 
 You are welcome to make pull requests to other open-source machine learning packages, improving their support to `Fashion-MNIST` dataset.
@@ -136,6 +137,7 @@ As one of the Machine Learning community's most popular datasets, MNIST has insp
 - [R](https://gist.github.com/brendano/39760) and [this](https://github.com/maddin79/darch)
 - [Matlab](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset)
 - [Ruby](https://github.com/gbuesing/mnist-ruby-test/blob/master/train/mnist_loader.rb)
+- [Rust](https://github.com/AtheMathmo/vision-rs/blob/master/src/fashion_mnist.rs)
 
 
 ## Benchmark

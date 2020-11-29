@@ -110,16 +110,17 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 
 ### 使用其它机器学习库
 截止今日，以下软件库中已内置了对`Fashion-MNIST`的支持。你只需要按照他们的文档载入`Fashion-MNIST`即可使用此数据集。
-- [Apache MXNet Gluon](https://mxnet.incubator.apache.org/api/python/gluon/data.html)
+- [Apache MXNet Gluon](https://mxnet.apache.org/api/python/docs/api/gluon/data/vision/datasets/index.html#mxnet.gluon.data.vision.datasets.FashionMNIST)
 - [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
-- [Pytorch](http://pytorch.org/docs/master/torchvision/datasets.html#fashion-mnist)
-- [Keras](https://keras.io/datasets/#fashion-mnist-database-of-fashion-articles)
+- [Pytorch](https://pytorch.org/docs/stable/torchvision/datasets.html#fashion-mnist)
+- [Keras](https://keras.io/api/datasets/fashion_mnist/)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
-- [Tensorflow](https://www.tensorflow.org/versions/r1.5/api_docs/python/tf/keras/datasets/fashion_mnist)
+- [Tensorflow](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/fashion_mnist)
+- [TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/fashion_mnist)
 - [Torch](https://github.com/mingloo/fashion-mnist)
-- [JuliaML](https://github.com/JuliaML/MLDatasets.jl)
-- [Chainer (latest)](https://docs.chainer.org/en/latest/reference/generated/chainer.datasets.get_fashion_mnist.html?highlight=fashion-mnist)
+- [JuliaML](https://juliaml.github.io/MLDatasets.jl/latest/datasets/FashionMNIST/)
+- [Chainer](https://docs.chainer.org/en/stable/reference/generated/chainer.datasets.get_fashion_mnist.html)
 
 欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。
 
@@ -140,6 +141,7 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 - [R](https://gist.github.com/brendano/39760)和[这里](https://github.com/maddin79/darch)
 - [Matlab](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset)
 - [Ruby](https://github.com/gbuesing/mnist-ruby-test/blob/master/train/mnist_loader.rb)
+- [Rust](https://github.com/AtheMathmo/vision-rs/blob/master/src/fashion_mnist.rs)
 
 
 ## 基准测试
