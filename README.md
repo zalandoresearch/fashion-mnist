@@ -129,7 +129,7 @@ As one of the Machine Learning community's most popular datasets, MNIST has insp
 - [C](https://stackoverflow.com/a/10409376)
 - [C++](https://github.com/wichtounet/mnist)
 - [Java](https://stackoverflow.com/a/8301949)
-- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist) and [this]((https://www.brine.io/fashion-mnist/train))
+- [Python](https://pypi.python.org/pypi/python-mnist) and [this](https://pypi.python.org/pypi/mnist)
 - [Scala](http://mxnet.io/tutorials/scala/mnist.html)
 - [Go](https://github.com/schuyler/neural-go/blob/master/mnist/mnist.go)
 - [C#](https://jamesmccaffrey.wordpress.com/2013/11/23/reading-the-mnist-data-set-with-c/)
