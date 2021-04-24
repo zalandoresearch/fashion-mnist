@@ -111,7 +111,7 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 ### 使用其它机器学习库
 截止今日，以下软件库中已内置了对`Fashion-MNIST`的支持。你只需要按照他们的文档载入`Fashion-MNIST`即可使用此数据集。
 - [Apache MXNet Gluon](https://mxnet.apache.org/api/python/docs/api/gluon/data/vision/datasets/index.html#mxnet.gluon.data.vision.datasets.FashionMNIST)
-- [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
+- [TensorFlow.js](https://github.com/tensorflow/tfjs-examples/blob/master/fashion-mnist-vae/data.js)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](https://pytorch.org/vision/stable/datasets.html#fashion-mnist)
 - [Keras](https://keras.io/api/datasets/fashion_mnist/)
@@ -121,7 +121,8 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://juliaml.github.io/MLDatasets.jl/latest/datasets/FashionMNIST/)
 - [Chainer](https://docs.chainer.org/en/stable/reference/generated/chainer.datasets.get_fashion_mnist.html)
-
+- [HuggingFace Datasets](https://huggingface.co/datasets/fashion_mnist)
+- 
 欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。
 
 
@@ -205,7 +206,7 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
 - [CGAN output after 5000 steps](https://github.com/a7b23/Conditional-GAN-using-tensorflow-slim)
-- [live demo of Generative Adversarial Network model with deeplearn.js](http://cognitivechaos.com/playground/fashion-gan/)
+- [live demo of Generative Adversarial Network model with TensorFlow.js](http://cognitivechaos.com/playground/fashion-gan/)
 - [GAN Playground - Explore Generative Adversarial Nets in your Browser](https://reiinakano.github.io/gan-playground/)
 
 #### 聚类

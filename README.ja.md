@@ -108,7 +108,7 @@ Fashion-MNISTを訓練するための高レベルのAPIである`tf.keras`の使
 今日まで、以下のライブラリは、組み込みデータセットとして `Fashion-MNIST`を含んでいます。 したがって、自分で`Fashion-MNIST`をダウンロードする必要はありません。 そのAPIに従うだけで、あなたは準備が整いました。
 
 - [Apache MXNet Gluon](https://mxnet.apache.org/api/python/docs/api/gluon/data/vision/datasets/index.html#mxnet.gluon.data.vision.datasets.FashionMNIST)
-- [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
+- [TensorFlow.js](https://github.com/tensorflow/tfjs-examples/blob/master/fashion-mnist-vae/data.js)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
 - [Pytorch](https://pytorch.org/vision/stable/datasets.html#fashion-mnist)
 - [Keras](https://keras.io/api/datasets/fashion_mnist/)
@@ -118,7 +118,8 @@ Fashion-MNISTを訓練するための高レベルのAPIである`tf.keras`の使
 - [Torch](https://github.com/mingloo/fashion-mnist)
 - [JuliaML](https://juliaml.github.io/MLDatasets.jl/latest/datasets/FashionMNIST/)
 - [Chainer](https://docs.chainer.org/en/stable/reference/generated/chainer.datasets.get_fashion_mnist.html)
-
+- [HuggingFace Datasets](https://huggingface.co/datasets/fashion_mnist)
+- 
 ようこそ私たちに参加して、各機械学習ライブラリ用の`Fashion-MNIST`のサポートを追加してください。
 
 
