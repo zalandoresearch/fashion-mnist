@@ -106,7 +106,7 @@ data.train.next_batch(BATCH_SIZE)
 data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/')
 ```
 
-Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIST的详细教程，[你可以在这里查看它](https://www.tensorflow.org/tutorials/keras/basic_classification)。
+Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIST的详细教程，[你可以在这里查看它](https://www.tensorflow.org/tutorials/keras/classification)。
 
 ### 使用其它机器学习库
 截止今日，以下软件库中已内置了对`Fashion-MNIST`的支持。你只需要按照他们的文档载入`Fashion-MNIST`即可使用此数据集。
