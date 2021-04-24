@@ -239,6 +239,9 @@ Apache MXNet으로 배워보는 딥러닝(Deep Learning) - 김무현 (AWS 솔루
 ### [UMAP](https://github.com/lmcinnes/umap) Fashion-MNIST (左) とオリジナルの MNIST (右) 
 <img src="doc/img/umap_example_fashion_mnist1.png" width="50%"><img src="doc/img/umap_example_mnist1.png" width="50%">
 
+### [PyMDE](https://github.com/cvxgrp/pymde) Fashion-MNIST (左) とオリジナルの MNIST (右) 
+<img src="doc/img/pymde_example_fashion_mnist.png" width="50%"><img src="doc/img/pymde_example_mnist.png" width="50%">
+
 ## 貢献する
 
 Thanks for your interest in contributing! There are many ways to get involved; start with our [contributor guidelines](/CONTRIBUTING.md) and then check these [open issues](https://github.com/zalandoresearch/fashion-mnist/issues) for specific tasks.
