@@ -113,7 +113,7 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 - [Apache MXNet Gluon](https://mxnet.apache.org/api/python/docs/api/gluon/data/vision/datasets/index.html#mxnet.gluon.data.vision.datasets.FashionMNIST)
 - [deeplearn.js](https://deeplearnjs.org/demos/model-builder/)
 - [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist)
-- [Pytorch](https://pytorch.org/docs/stable/torchvision/datasets.html#fashion-mnist)
+- [Pytorch](https://pytorch.org/vision/stable/datasets.html#fashion-mnist)
 - [Keras](https://keras.io/api/datasets/fashion_mnist/)
 - [Edward](http://edwardlib.org/api/observations/fashion_mnist)
 - [Tensorflow](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/fashion_mnist)
