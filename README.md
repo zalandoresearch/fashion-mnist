@@ -123,6 +123,40 @@ To date, the following libraries have included `Fashion-MNIST` as a built-in dat
  
 You are welcome to make pull requests to other open-source machine learning packages, improving their support to `Fashion-MNIST` dataset.
 
+
+### How to use with Hub
+A simple way of using this dataset is with [Activeloop](https://activeloop.ai)'s python package [Hub](https://github.com/activeloopai/Hub)!
+
+First, run `pip install hub` (or `pip3 install hub`). 
+
+```python
+import hub
+ds = hub.load('hub://activeloop/fashion-mnist-test')
+
+# check out the first image,and it's label!
+import matplotlib.pyplot as plt
+plt.imshow(ds.images[0].numpy())
+plt.title(f"{ds.labels[0].numpy()}")
+plt.show()
+
+# train a model in pytorch
+for sample in ds.pytorch():
+    # ... model code here ...
+
+# train a model in tensorflow
+for sample in ds.tensorflow():
+    # ... model code here ...
+```
+
+available tensors can be shown by printing dataset:
+
+```python
+print(ds)
+# prints: Dataset(path='hub://activeloop/fashion-mnist-test', read_only=True, tensors=['images', 'labels'])
+```
+
+For more information, check out the [hub documentation](https://docs.activeloop.ai/).
+
 ### Loading data with other languages
 
 As one of the Machine Learning community's most popular datasets, MNIST has inspired people to implement loaders in many different languages. You can use these loaders with the `Fashion-MNIST` dataset as well. (Note: may require decompressing first.) To date, we haven't yet tested all of these loaders with Fashion-MNIST.
