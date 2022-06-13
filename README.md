@@ -131,7 +131,7 @@ First, run `pip install hub` (or `pip3 install hub`).
 
 ```python
 import hub
-ds = hub.load('hub://activeloop/fashion-mnist-test')
+ds = hub.load('hub://activeloop/fashion-mnist-train')
 
 # check out the first image,and it's label!
 import matplotlib.pyplot as plt
