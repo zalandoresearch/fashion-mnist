@@ -65,8 +65,8 @@ Each training and test example is assigned to one of the following labels:
 
 | Label | Description |
 | --- | --- |
-| 0 | T-shirt/top |
-| 1 | Trouser |
+| 0 | Trouser |
+| 1 | T-shirt/top |
 | 2 | Pullover |
 | 3 | Dress |
 | 4 | Coat |
