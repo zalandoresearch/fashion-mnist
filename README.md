@@ -193,6 +193,7 @@ The table below collects the submitted benchmarks. Note that **we haven't yet te
 |Dyra-Net| Rescale to unit interval | 0.906| -| [@Dirk Schäfer](https://github.com/disc5)| [:link:](https://github.com/disc5/dyra-net) [:link:](https://dl.acm.org/citation.cfm?id=3204176.3204200)|
 |Google AutoML|24 compute hours (higher quality)| 0.939|-| [@Sebastian Heinz](https://github.com/sebastianheinz) |[:link:](https://www.statworx.com/de/blog/a-performance-benchmark-of-google-automl-vision-using-fashion-mnist/)|
 |Fastai| Resnet50+Fine-tuning+Softmax on last layer's activations| 0.9312| - | [@Sayak](https://github.com/sayakpaul) | [:link:](https://github.com/sayakpaul/Experiments-on-Fashion-MNIST/)|
+|Fuzzy-Pattern Tsetlin Machine| Convolutional Preprocessing and Data Augmentation| 0.9468| - | [Artem Hnilov](https://boobsd.github.io) | [:link:](https://github.com/BooBSD/FuzzyPatternTM)|
 
 
 ### Other Explorations of Fashion-MNIST
