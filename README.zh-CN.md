@@ -33,7 +33,7 @@
 ## 为什么要做这个数据集？
 
 [经典的MNIST数据集](http://yann.lecun.com/exdb/mnist/)包含了大量的手写数字。十几年来，来自机器学习、机器视觉、人工智能、深度学习领域的研究员们把这个数据集作为衡量算法的基准之一。你会在很多的会议，期刊的论文中发现这个数据集的身影。实际上，MNIST数据集已经成为算法作者的必测的数据集之一。有人曾调侃道：*"如果一个算法在MNIST不work, 那么它就根本没法用；而如果它在MNIST上work, 它在其他数据上也可能不work！"*
- 
+
 
 `Fashion-MNIST`的目的是要成为MNIST数据集的一个直接替代品。作为算法作者，你不需要修改任何的代码，就可以直接使用这个数据集。`Fashion-MNIST`的图片大小，训练、测试样本数及类别数与经典MNIST**完全相同**。
 
@@ -60,7 +60,7 @@
 | `t10k-labels-idx1-ubyte.gz`  | 测试集的类别标签  | 10,000| 5.1 KBytes | [下载](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz)|`bb300cfdad3c16e7a12a480ee83cd310`|
 
 或者，你可以直接克隆这个代码库。数据集就放在`data/fashion`下。这个代码库还包含了一些用于评测和可视化的脚本。
-   
+
 ```bash
 git clone git@github.com:zalandoresearch/fashion-mnist.git
 ```
@@ -101,7 +101,7 @@ data = input_data.read_data_sets('data/fashion')
 data.train.next_batch(BATCH_SIZE)
 ```
 
-注意，Tensorflow (master ver.) 支持向`read_data_sets`函数传入MNIST数据集的地址。你可以使用： 
+注意，Tensorflow (master ver.) 支持向`read_data_sets`函数传入MNIST数据集的地址。你可以使用：
 ```python
 data = input_data.read_data_sets('data/fashion', source_url='http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/')
 ```
@@ -122,7 +122,7 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 - [JuliaML](https://juliaml.github.io/MLDatasets.jl/latest/datasets/FashionMNIST/)
 - [Chainer](https://docs.chainer.org/en/stable/reference/generated/chainer.datasets.get_fashion_mnist.html)
 - [HuggingFace Datasets](https://huggingface.co/datasets/fashion_mnist)
-- 
+-
 欢迎你同我们一起，为各个机器学习库增加对`Fashion-MNIST`的支持。
 
 
@@ -171,8 +171,8 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 |3 Conv+2 FC | None | 0.907 | - | [@Cenk Bircanoğlu](https://github.com/cenkbircanoglu) | [:link:](https://github.com/cenkbircanoglu/openface/tree/master/fashion_mnist)|
 |3 Conv+pooling+BN | None | 0.903 | 0.994 | [@meghanabhange](https://github.com/meghanabhange) | [:link:](https://github.com/meghanabhange/FashionMNIST-3-Layer-CNN) |
 |3 Conv+pooling+2 FC+dropout | None | 0.926 | - | [@Umberto Griffo](https://github.com/umbertogriffo) | [:link:](https://github.com/umbertogriffo/Fashion-mnist-cnn-keras)|
-|3 Conv+BN+pooling|None|0.921|0.992|[@gchhablani](https://github.com/gchhablani)|[:link:](https://github.com/gchhablani/CNN-with-FashionMNIST)| 
-|5 Conv+BN+pooling|None|0.931|-|[@Noumanmufc1](https://github.com/Noumanmufc1)|[:link:](https://gist.github.com/Noumanmufc1/60f00e434f0ce42b6f4826029737490a)| 
+|3 Conv+BN+pooling|None|0.921|0.992|[@gchhablani](https://github.com/gchhablani)|[:link:](https://github.com/gchhablani/CNN-with-FashionMNIST)|
+|5 Conv+BN+pooling|None|0.931|-|[@Noumanmufc1](https://github.com/Noumanmufc1)|[:link:](https://gist.github.com/Noumanmufc1/60f00e434f0ce42b6f4826029737490a)|
 |CNN with optional shortcuts, dense-like connectivity| standardization+augmentation+random erasing | 0.947 |-| [@kennivich](https://github.com/Dezhic) | [:link:](https://github.com/Dezhic/fashion-classifier)|
 |GRU+SVM | None| 0.888 | 0.965 | [@AFAgarap](https://github.com/AFAgarap) | [:link:](https://gist.githubusercontent.com/AFAgarap/92c1c4a5dd771999b0201ec0e7edfee0/raw/828fbda0e466dacb1fad66549e0e3022e1c7263a/gru_svm_zalando.py)|
 |GRU+SVM with dropout | None| 0.897 | 0.988 | [@AFAgarap](https://github.com/AFAgarap) | [:link:](https://gist.githubusercontent.com/AFAgarap/92c1c4a5dd771999b0201ec0e7edfee0/raw/58dbe7cd8b0d83e4386cd6896766113b1a9af096/gru_svm_zalando_dropout.py)|
@@ -188,7 +188,7 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 |VGG16 26M parameters | None | 0.935| - | [@QuantumLiu](https://github.com/QuantumLiu)|[:link:](https://github.com/QuantumLiu/fashion-mnist-demo-by-Keras) [:link:](https://zhuanlan.zhihu.com/p/28968219)|
 |WRN-28-10| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.959 | -| [@zhunzhong07](https://github.com/zhunzhong07)|[:link:](https://github.com/zhunzhong07/Random-Erasing)|
 |WRN-28-10 + Random Erasing| standard preprocessing (mean/std subtraction/division) and augmentation (random crops/horizontal flips) | 0.963 | -| [@zhunzhong07](https://github.com/zhunzhong07)|[:link:](https://github.com/zhunzhong07/Random-Erasing)|
-|Human Performance| Crowd-sourced evaluation of human (with no fashion expertise) performance. 1000 randomly sampled test images, 3 labels per image, majority labelling. | 0.835 | - | Leo  | - 
+|Human Performance| Crowd-sourced evaluation of human (with no fashion expertise) performance. 1000 randomly sampled test images, 3 labels per image, majority labelling. | 0.835 | - | Leo  | -
 |Capsule Network 8M parameters| Normalization and shift at most 2 pixel and horizontal flip | 0.936 | - | [@XifengGuo](https://github.com/XifengGuo)  | [:link:](https://github.com/XifengGuo/CapsNet-Fashion-MNIST)|
 |HOG+SVM| HOG | 0.926 | - | [@subalde](https://github.com/subalde) | [:link:](https://github.com/subalde/fashion-mnist)|
 |XgBoost| scaling the pixel values to mean=0.0 and var=1.0| 0.898| 0.958| [@anktplwl91](https://github.com/anktplwl91)| [:link:](https://github.com/anktplwl91/fashion_mnist.git)|
@@ -199,9 +199,9 @@ Tensorflow的官网也提供了一份使用高级API`tf.keras`训练Fashion-MNIS
 ### 更多在Fashion-MNIST上的探索和尝试
 
 #### [Fashion-MNIST: 年度总结](https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/)
-#### [在Google Scholar中查看引用Fashion-MNIST的论文](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas) 
+#### [在Google Scholar中查看引用Fashion-MNIST的论文](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=fashion-mnist&btnG=&oq=fas)
 
-#### 生成对抗网络 (GANs) 
+#### 生成对抗网络 (GANs)
 - [Tensorflow implementation of various GANs and VAEs.](https://github.com/hwalsuklee/tensorflow-generative-model-collections) (**推荐阅读！** 注意不同GANs的算法在Fashion-MNIST上生成的样本明显不同，而这点在经典的MNIST数据集上是观察不到的。)
 - [Make a ghost wardrobe using DCGAN](https://twitter.com/spaceLenny/status/901488938023403520)
 - [fashion-mnist的gan玩具](http://kexue.fm/archives/4540/)
@@ -234,16 +234,16 @@ Apache MXNet으로 배워보는 딥러닝(Deep Learning) - 김무현 (AWS 솔루
 
 ## 数据可视化
 
-### t-SNE在Fashion-MNIST(左侧)和经典MNIST上的可视化(右侧) 
+### t-SNE在Fashion-MNIST(左侧)和经典MNIST上的可视化(右侧)
 <img src="doc/img/34d72c08.png" width="50%"><img src="doc/img/01e0c4be.png" width="50%">
 
-### PCA在Fashion-MNIST(左侧)和经典MNIST上的可视化(右侧) 
+### PCA在Fashion-MNIST(左侧)和经典MNIST上的可视化(右侧)
 <img src="doc/img/f04ba662.png" width="50%"><img src="doc/img/4433f0e1.png" width="50%">
 
-### [UMAP](https://github.com/lmcinnes/umap)在Fashion-MNIST(左侧)和经典MNIST上的可视化(右侧)  
+### [UMAP](https://github.com/lmcinnes/umap)在Fashion-MNIST(左侧)和经典MNIST上的可视化(右侧)
 <img src="doc/img/umap_example_fashion_mnist1.png" width="50%"><img src="doc/img/umap_example_mnist1.png" width="50%">
 
-### [PyMDE](https://github.com/cvxgrp/pymde)在Fashion-MNIST(左侧)和经典MNIST上的可视化(右侧)  
+### [PyMDE](https://github.com/cvxgrp/pymde)在Fashion-MNIST(左侧)和经典MNIST上的可视化(右侧)
 <img src="doc/img/pymde_example_fashion_mnist.png" width="50%"><img src="doc/img/pymde_example_mnist.png" width="50%">
 
 ## 参与贡献
@@ -271,7 +271,7 @@ Apache MXNet으로 배워보는 딥러닝(Deep Learning) - 김무현 (AWS 솔루
 }
 ```
 
-[有谁引用了Fashion-MNIST?](https://scholar.google.com/scholar?scisbd=2&q=%22fashion-mnist%22&hl=en&as_sdt=0,5) 
+[有谁引用了Fashion-MNIST?](https://scholar.google.com/scholar?scisbd=2&q=%22fashion-mnist%22&hl=en&as_sdt=0,5)
 
 
 ## License

@@ -6,11 +6,11 @@ We are happy to accept your contributions to make `Fashion-MNIST` better and mor
 2. If there is not, open a new one to start a discussion. We hate to close finished PRs!
 3. If we decide your concern needs code changes, we would be happy to accept a pull request. Please consider the commit guidelines below.
 
-In case you just want to help out and don't know where to start, [issues with "help wanted" label](https://github.com/zalandoresearch/fashion-mnist/labels/help%20wanted) are good for first-time contributors. 
+In case you just want to help out and don't know where to start, [issues with "help wanted" label](https://github.com/zalandoresearch/fashion-mnist/labels/help%20wanted) are good for first-time contributors.
 
 ## Git Commit Guidelines
 
-If there is already a ticket, use this number at the start of your commit message. 
+If there is already a ticket, use this number at the start of your commit message.
 
 Use [semantic commit messages](http://seesparkbox.com/foundry/semantic_commit_messages):
 
@@ -26,4 +26,4 @@ Use [semantic commit messages](http://seesparkbox.com/foundry/semantic_commit_me
 * test (adding missing tests, refactoring tests; no production code change)
 * chore (updating grunt tasks etc; no production code change)
 
-**Example:** `#42 citation: I used it in my paper, here is my bibtex` 
+**Example:** `#42 citation: I used it in my paper, here is my bibtex`
